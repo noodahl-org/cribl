@@ -30323,29 +30323,31 @@ type ParserLibEntryType string
 type ParserMode string
 
 // Pipeline defines model for Pipeline.
+
+type PipelineConf struct {
+	// AsyncFuncTimeout Time (in ms) to wait for an async function to complete processing of a data item
+	AsyncFuncTimeout *int    `json:"asyncFuncTimeout,omitempty"`
+	Description      *string `json:"description,omitempty"`
+
+	// Functions List of Functions to pass data through
+	Functions *[]PipelineFunctionConf `json:"functions,omitempty"`
+	Groups    *map[string]struct {
+		// Description Short description of this group
+		Description *string `json:"description,omitempty"`
+
+		// Disabled Whether this group is disabled
+		Disabled *bool  `json:"disabled,omitempty"`
+		Name     string `json:"name"`
+	} `json:"groups,omitempty"`
+
+	// Output The output destination for events processed by this Pipeline
+	Output *string `json:"output,omitempty"`
+
+	// Streamtags Tags for filtering and grouping in @{product}
+	Streamtags *[]string `json:"streamtags,omitempty"`
+}
 type Pipeline struct {
-	Conf struct {
-		// AsyncFuncTimeout Time (in ms) to wait for an async function to complete processing of a data item
-		AsyncFuncTimeout *int    `json:"asyncFuncTimeout,omitempty"`
-		Description      *string `json:"description,omitempty"`
-
-		// Functions List of Functions to pass data through
-		Functions *[]PipelineFunctionConf `json:"functions,omitempty"`
-		Groups    *map[string]struct {
-			// Description Short description of this group
-			Description *string `json:"description,omitempty"`
-
-			// Disabled Whether this group is disabled
-			Disabled *bool  `json:"disabled,omitempty"`
-			Name     string `json:"name"`
-		} `json:"groups,omitempty"`
-
-		// Output The output destination for events processed by this Pipeline
-		Output *string `json:"output,omitempty"`
-
-		// Streamtags Tags for filtering and grouping in @{product}
-		Streamtags *[]string `json:"streamtags,omitempty"`
-	} `json:"conf"`
+	Conf PipelineConf `json:"conf"`
 	Id string `json:"id"`
 }
 

@@ -18,3 +18,14 @@ pipeline --> outputs: fetch
 pipeline --> routes: fetch
 pipeline -> pipelines: create pipeline<br>(basically a stub)
 ```
+
+Add route
+```mermaid
+sequenceDiagram
+participant client
+participant pipelines
+participant outputs
+client --> pipelines: fetch
+client --> outputs: fetch
+
+```
