@@ -8201,7 +8201,7 @@ type AMTrustPolicyStatementAction1 = []string
 
 // AMTrustPolicy_Statement_Action defines model for AMTrustPolicy.Statement.Action.
 type AMTrustPolicy_Statement_Action struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // AUTHPROVIDER defines model for AUTH_PROVIDER.
@@ -8727,7 +8727,7 @@ type ChartConfigCustomDataPointScale1 = float32
 
 // ChartConfig_CustomData_PointScale defines model for ChartConfig.CustomData.PointScale.
 type ChartConfig_CustomData_PointScale struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // ChartConfigMapDetailsPointScale0 defines model for .
@@ -8738,7 +8738,7 @@ type ChartConfigMapDetailsPointScale1 = float32
 
 // ChartConfig_MapDetails_PointScale defines model for ChartConfig.MapDetails.PointScale.
 type ChartConfig_MapDetails_PointScale struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // ChartSeries defines model for ChartSeries.
@@ -8876,7 +8876,7 @@ type ContainerCommand1 = []string
 
 // Container_Command defines model for Container.Command.
 type Container_Command struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // ContainerType defines model for Container.Type.
@@ -9095,7 +9095,7 @@ type DatatypeOverrides struct {
 
 // DatatypePreviewInput defines model for DatatypePreviewInput.
 type DatatypePreviewInput struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // DatatypePreviewInput0 defines model for .
@@ -9355,7 +9355,7 @@ type EventBreakerRuleParser3Type string
 
 // EventBreakerRule_Parser defines model for EventBreakerRule.Parser.
 type EventBreakerRule_Parser struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // EventBreakerRuleTimestampType defines model for EventBreakerRule.Timestamp.Type.
@@ -9373,7 +9373,7 @@ type EventBreakerRuleTimestampTimezone1 struct {
 
 // EventBreakerRule_TimestampTimezone defines model for EventBreakerRule.TimestampTimezone.
 type EventBreakerRule_TimestampTimezone struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // EventBreakerRuleType defines model for EventBreakerRule.Type.
@@ -9575,7 +9575,7 @@ type GitInfoRemote1 = bool
 
 // GitInfo_Remote defines model for GitInfo.Remote.
 type GitInfo_Remote struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // GitOpsType defines model for GitOpsType.
@@ -9773,7 +9773,7 @@ type HmacFunction struct {
 
 // Input defines model for Input.
 type Input struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // InputAppscope defines model for InputAppscope.
@@ -12800,7 +12800,7 @@ type InputGrafana struct {
 		RequestCert *bool `json:"requestCert,omitempty"`
 	} `json:"tls,omitempty"`
 	Type  *InputGrafanaType `json:"type,omitempty"`
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // InputGrafanaLokiAuthAuthType Loki logs authentication type
@@ -17880,7 +17880,7 @@ type InputSyslog struct {
 
 	// UdpSocketRxBufSize Optionally, set the SO_RCVBUF socket option for the UDP socket. This value tells the operating system how many bytes can be buffered in the kernel before events are dropped. Leave blank to use the OS default. Caution: Increasing this value will affect OS memory utilization.
 	UdpSocketRxBufSize *float32 `json:"udpSocketRxBufSize,omitempty"`
-	union              json.RawMessage
+	Union              json.RawMessage
 }
 
 // InputSyslogPqCompress Codec to use to compress the persisted data.
@@ -19610,7 +19610,7 @@ type KMSProviderConfigAuth1 struct {
 
 // KMSProviderConfig_Auth defines model for KMSProviderConfig.Auth.
 type KMSProviderConfig_Auth struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // KeyMetadataEntity defines model for KeyMetadataEntity.
@@ -19782,7 +19782,7 @@ type LookupFile struct {
 
 	// Tags One or more tags related to this lookup. Optional.
 	Tags  *string `json:"tags,omitempty"`
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // LookupFile0 defines model for .
@@ -19832,7 +19832,7 @@ type MasterWorkerEntryType string
 
 // MaxConcurrentSearchesType defines model for MaxConcurrentSearchesType.
 type MaxConcurrentSearchesType struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // MaxConcurrentSearchesType0 defines model for .
@@ -19883,7 +19883,7 @@ type MetricsAggOptsEarliest1 = float32
 
 // MetricsAggOpts_Earliest defines model for MetricsAggOpts.Earliest.
 type MetricsAggOpts_Earliest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // MetricsAggOptsLatest0 defines model for .
@@ -19894,7 +19894,7 @@ type MetricsAggOptsLatest1 = float32
 
 // MetricsAggOpts_Latest defines model for MetricsAggOpts.Latest.
 type MetricsAggOpts_Latest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // MetricsStore defines model for MetricsStore.
@@ -19981,7 +19981,7 @@ type NodeProvidedInfoOs1 struct {
 
 // NodeProvidedInfo_Os defines model for NodeProvidedInfo.Os.
 type NodeProvidedInfo_Os struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // NodeSkippedUpgradeStatus defines model for NodeSkippedUpgradeStatus.
@@ -20044,7 +20044,7 @@ type NotificationTargetConfigs0 struct {
 // Notification_TargetConfigs_Item defines model for Notification.targetConfigs.Item.
 type Notification_TargetConfigs_Item struct {
 	Id    string `json:"id"`
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // NotificationTarget defines model for NotificationTarget.
@@ -20085,7 +20085,7 @@ type OsMetadata struct {
 
 // Output defines model for Output.
 type Output struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // OutputAzureBlob defines model for OutputAzureBlob.
@@ -24664,7 +24664,7 @@ type OutputGrafanaCloud struct {
 
 	// UseRoundRobinDns Enables round-robin DNS lookup. When a DNS server returns multiple addresses, @{product} will cycle through them in the order returned. For optimal performance, consider enabling this setting for non-load balanced destinations.
 	UseRoundRobinDns *bool `json:"useRoundRobinDns,omitempty"`
-	union            json.RawMessage
+	Union            json.RawMessage
 }
 
 // OutputGrafanaCloudFailedRequestLoggingMode Data to log when a request fails. All headers are redacted by default, unless listed as safe headers below.
@@ -30325,27 +30325,27 @@ type ParserMode string
 // Pipeline defines model for Pipeline.
 
 type PipelineConf struct {
-	// AsyncFuncTimeout Time (in ms) to wait for an async function to complete processing of a data item
-	AsyncFuncTimeout *int    `json:"asyncFuncTimeout,omitempty"`
-	Description      *string `json:"description,omitempty"`
+		// AsyncFuncTimeout Time (in ms) to wait for an async function to complete processing of a data item
+		AsyncFuncTimeout *int    `json:"asyncFuncTimeout,omitempty"`
+		Description      *string `json:"description,omitempty"`
 
-	// Functions List of Functions to pass data through
-	Functions *[]PipelineFunctionConf `json:"functions,omitempty"`
-	Groups    *map[string]struct {
-		// Description Short description of this group
-		Description *string `json:"description,omitempty"`
+		// Functions List of Functions to pass data through
+		Functions *[]PipelineFunctionConf `json:"functions,omitempty"`
+		Groups    *map[string]struct {
+			// Description Short description of this group
+			Description *string `json:"description,omitempty"`
 
-		// Disabled Whether this group is disabled
-		Disabled *bool  `json:"disabled,omitempty"`
-		Name     string `json:"name"`
-	} `json:"groups,omitempty"`
+			// Disabled Whether this group is disabled
+			Disabled *bool  `json:"disabled,omitempty"`
+			Name     string `json:"name"`
+		} `json:"groups,omitempty"`
 
-	// Output The output destination for events processed by this Pipeline
-	Output *string `json:"output,omitempty"`
+		// Output The output destination for events processed by this Pipeline
+		Output *string `json:"output,omitempty"`
 
-	// Streamtags Tags for filtering and grouping in @{product}
-	Streamtags *[]string `json:"streamtags,omitempty"`
-}
+		// Streamtags Tags for filtering and grouping in @{product}
+		Streamtags *[]string `json:"streamtags,omitempty"`
+	}
 type Pipeline struct {
 	Conf PipelineConf `json:"conf"`
 	Id string `json:"id"`
@@ -30416,7 +30416,7 @@ type PreviewOptionsEarliest1 = float32
 
 // PreviewOptions_Earliest defines model for PreviewOptions.Earliest.
 type PreviewOptions_Earliest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // PreviewOptionsLatest0 defines model for .
@@ -30427,7 +30427,7 @@ type PreviewOptionsLatest1 = float32
 
 // PreviewOptions_Latest defines model for PreviewOptions.Latest.
 type PreviewOptions_Latest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // PreviewRequestBody defines model for PreviewRequestBody.
@@ -30713,7 +30713,7 @@ type RoutesRoute struct {
 
 // RunnableJob defines model for RunnableJob.
 type RunnableJob struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // RunnableJobCollection defines model for RunnableJobCollection.
@@ -31023,7 +31023,7 @@ type SampleFile struct {
 
 // SavedJob defines model for SavedJob.
 type SavedJob struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SavedJobCollection defines model for SavedJobCollection.
@@ -31397,7 +31397,7 @@ type SearchDashboardElements1Variant string
 
 // SearchDashboard_Elements_Item defines model for SearchDashboard.elements.Item.
 type SearchDashboard_Elements_Item struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchEvent defines model for SearchEvent.
@@ -31468,7 +31468,7 @@ type SearchJobEarliest1 = float32
 
 // SearchJob_Earliest defines model for SearchJob.Earliest.
 type SearchJob_Earliest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchJobLatest0 defines model for .
@@ -31479,7 +31479,7 @@ type SearchJobLatest1 = float32
 
 // SearchJob_Latest defines model for SearchJob.Latest.
 type SearchJob_Latest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchJobStatus defines model for SearchJob.Status.
@@ -31532,7 +31532,7 @@ type SearchJobStageConfigEarliest1 = float32
 
 // SearchJobStageConfig_Earliest defines model for SearchJobStageConfig.Earliest.
 type SearchJobStageConfig_Earliest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchJobStageConfigLatest0 defines model for .
@@ -31543,7 +31543,7 @@ type SearchJobStageConfigLatest1 = float32
 
 // SearchJobStageConfig_Latest defines model for SearchJobStageConfig.Latest.
 type SearchJobStageConfig_Latest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchJobStageConfigStatus defines model for SearchJobStageConfig.Status.
@@ -31572,7 +31572,7 @@ type SearchParameterType string
 
 // SearchParameterValue defines model for SearchParameterValue.
 type SearchParameterValue struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchParameterValue0 defines model for .
@@ -31589,7 +31589,7 @@ type SearchParameters = interface{}
 
 // SearchQuery defines model for SearchQuery.
 type SearchQuery struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchQuery0 defines model for .
@@ -31622,7 +31622,7 @@ type SearchQuery1Earliest1 = float32
 
 // SearchQuery_1_Earliest defines model for SearchQuery.1.Earliest.
 type SearchQuery_1_Earliest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchQuery1Latest0 defines model for .
@@ -31633,7 +31633,7 @@ type SearchQuery1Latest1 = float32
 
 // SearchQuery_1_Latest defines model for SearchQuery.1.Latest.
 type SearchQuery_1_Latest struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchQuery1Query0 defines model for .
@@ -31641,7 +31641,7 @@ type SearchQuery1Query0 = string
 
 // SearchQuery_1_Query defines model for SearchQuery.1.Query.
 type SearchQuery_1_Query struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchQuery1Type defines model for SearchQuery.1.Type.
@@ -31675,7 +31675,7 @@ type SearchSettingsSearchQueueLength0 = float32
 
 // SearchSettings_SearchQueueLength defines model for SearchSettings.SearchQueueLength.
 type SearchSettings_SearchQueueLength struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchSettingsWarmPoolSize0 defines model for .
@@ -31686,7 +31686,7 @@ type SearchSettingsWarmPoolSize1 = interface{}
 
 // SearchSettings_WarmPoolSize defines model for SearchSettings.WarmPoolSize.
 type SearchSettings_WarmPoolSize struct {
-	union json.RawMessage
+	Union json.RawMessage
 }
 
 // SearchTerm defines model for SearchTerm.
@@ -33919,2105 +33919,2105 @@ func (a ScriptLibEntry) MarshalJSON() ([]byte, error) {
 	return json.Marshal(object)
 }
 
-// AsAMTrustPolicyStatementAction0 returns the union data inside the AMTrustPolicy_Statement_Action as a AMTrustPolicyStatementAction0
+// AsAMTrustPolicyStatementAction0 returns the Union data inside the AMTrustPolicy_Statement_Action as a AMTrustPolicyStatementAction0
 func (t AMTrustPolicy_Statement_Action) AsAMTrustPolicyStatementAction0() (AMTrustPolicyStatementAction0, error) {
 	var body AMTrustPolicyStatementAction0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromAMTrustPolicyStatementAction0 overwrites any union data inside the AMTrustPolicy_Statement_Action as the provided AMTrustPolicyStatementAction0
+// FromAMTrustPolicyStatementAction0 overwrites any Union data inside the AMTrustPolicy_Statement_Action as the provided AMTrustPolicyStatementAction0
 func (t *AMTrustPolicy_Statement_Action) FromAMTrustPolicyStatementAction0(v AMTrustPolicyStatementAction0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeAMTrustPolicyStatementAction0 performs a merge with any union data inside the AMTrustPolicy_Statement_Action, using the provided AMTrustPolicyStatementAction0
+// MergeAMTrustPolicyStatementAction0 performs a merge with any Union data inside the AMTrustPolicy_Statement_Action, using the provided AMTrustPolicyStatementAction0
 func (t *AMTrustPolicy_Statement_Action) MergeAMTrustPolicyStatementAction0(v AMTrustPolicyStatementAction0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsAMTrustPolicyStatementAction1 returns the union data inside the AMTrustPolicy_Statement_Action as a AMTrustPolicyStatementAction1
+// AsAMTrustPolicyStatementAction1 returns the Union data inside the AMTrustPolicy_Statement_Action as a AMTrustPolicyStatementAction1
 func (t AMTrustPolicy_Statement_Action) AsAMTrustPolicyStatementAction1() (AMTrustPolicyStatementAction1, error) {
 	var body AMTrustPolicyStatementAction1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromAMTrustPolicyStatementAction1 overwrites any union data inside the AMTrustPolicy_Statement_Action as the provided AMTrustPolicyStatementAction1
+// FromAMTrustPolicyStatementAction1 overwrites any Union data inside the AMTrustPolicy_Statement_Action as the provided AMTrustPolicyStatementAction1
 func (t *AMTrustPolicy_Statement_Action) FromAMTrustPolicyStatementAction1(v AMTrustPolicyStatementAction1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeAMTrustPolicyStatementAction1 performs a merge with any union data inside the AMTrustPolicy_Statement_Action, using the provided AMTrustPolicyStatementAction1
+// MergeAMTrustPolicyStatementAction1 performs a merge with any Union data inside the AMTrustPolicy_Statement_Action, using the provided AMTrustPolicyStatementAction1
 func (t *AMTrustPolicy_Statement_Action) MergeAMTrustPolicyStatementAction1(v AMTrustPolicyStatementAction1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t AMTrustPolicy_Statement_Action) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *AMTrustPolicy_Statement_Action) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsChartConfigCustomDataPointScale0 returns the union data inside the ChartConfig_CustomData_PointScale as a ChartConfigCustomDataPointScale0
+// AsChartConfigCustomDataPointScale0 returns the Union data inside the ChartConfig_CustomData_PointScale as a ChartConfigCustomDataPointScale0
 func (t ChartConfig_CustomData_PointScale) AsChartConfigCustomDataPointScale0() (ChartConfigCustomDataPointScale0, error) {
 	var body ChartConfigCustomDataPointScale0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromChartConfigCustomDataPointScale0 overwrites any union data inside the ChartConfig_CustomData_PointScale as the provided ChartConfigCustomDataPointScale0
+// FromChartConfigCustomDataPointScale0 overwrites any Union data inside the ChartConfig_CustomData_PointScale as the provided ChartConfigCustomDataPointScale0
 func (t *ChartConfig_CustomData_PointScale) FromChartConfigCustomDataPointScale0(v ChartConfigCustomDataPointScale0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeChartConfigCustomDataPointScale0 performs a merge with any union data inside the ChartConfig_CustomData_PointScale, using the provided ChartConfigCustomDataPointScale0
+// MergeChartConfigCustomDataPointScale0 performs a merge with any Union data inside the ChartConfig_CustomData_PointScale, using the provided ChartConfigCustomDataPointScale0
 func (t *ChartConfig_CustomData_PointScale) MergeChartConfigCustomDataPointScale0(v ChartConfigCustomDataPointScale0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsChartConfigCustomDataPointScale1 returns the union data inside the ChartConfig_CustomData_PointScale as a ChartConfigCustomDataPointScale1
+// AsChartConfigCustomDataPointScale1 returns the Union data inside the ChartConfig_CustomData_PointScale as a ChartConfigCustomDataPointScale1
 func (t ChartConfig_CustomData_PointScale) AsChartConfigCustomDataPointScale1() (ChartConfigCustomDataPointScale1, error) {
 	var body ChartConfigCustomDataPointScale1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromChartConfigCustomDataPointScale1 overwrites any union data inside the ChartConfig_CustomData_PointScale as the provided ChartConfigCustomDataPointScale1
+// FromChartConfigCustomDataPointScale1 overwrites any Union data inside the ChartConfig_CustomData_PointScale as the provided ChartConfigCustomDataPointScale1
 func (t *ChartConfig_CustomData_PointScale) FromChartConfigCustomDataPointScale1(v ChartConfigCustomDataPointScale1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeChartConfigCustomDataPointScale1 performs a merge with any union data inside the ChartConfig_CustomData_PointScale, using the provided ChartConfigCustomDataPointScale1
+// MergeChartConfigCustomDataPointScale1 performs a merge with any Union data inside the ChartConfig_CustomData_PointScale, using the provided ChartConfigCustomDataPointScale1
 func (t *ChartConfig_CustomData_PointScale) MergeChartConfigCustomDataPointScale1(v ChartConfigCustomDataPointScale1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t ChartConfig_CustomData_PointScale) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *ChartConfig_CustomData_PointScale) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsChartConfigMapDetailsPointScale0 returns the union data inside the ChartConfig_MapDetails_PointScale as a ChartConfigMapDetailsPointScale0
+// AsChartConfigMapDetailsPointScale0 returns the Union data inside the ChartConfig_MapDetails_PointScale as a ChartConfigMapDetailsPointScale0
 func (t ChartConfig_MapDetails_PointScale) AsChartConfigMapDetailsPointScale0() (ChartConfigMapDetailsPointScale0, error) {
 	var body ChartConfigMapDetailsPointScale0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromChartConfigMapDetailsPointScale0 overwrites any union data inside the ChartConfig_MapDetails_PointScale as the provided ChartConfigMapDetailsPointScale0
+// FromChartConfigMapDetailsPointScale0 overwrites any Union data inside the ChartConfig_MapDetails_PointScale as the provided ChartConfigMapDetailsPointScale0
 func (t *ChartConfig_MapDetails_PointScale) FromChartConfigMapDetailsPointScale0(v ChartConfigMapDetailsPointScale0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeChartConfigMapDetailsPointScale0 performs a merge with any union data inside the ChartConfig_MapDetails_PointScale, using the provided ChartConfigMapDetailsPointScale0
+// MergeChartConfigMapDetailsPointScale0 performs a merge with any Union data inside the ChartConfig_MapDetails_PointScale, using the provided ChartConfigMapDetailsPointScale0
 func (t *ChartConfig_MapDetails_PointScale) MergeChartConfigMapDetailsPointScale0(v ChartConfigMapDetailsPointScale0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsChartConfigMapDetailsPointScale1 returns the union data inside the ChartConfig_MapDetails_PointScale as a ChartConfigMapDetailsPointScale1
+// AsChartConfigMapDetailsPointScale1 returns the Union data inside the ChartConfig_MapDetails_PointScale as a ChartConfigMapDetailsPointScale1
 func (t ChartConfig_MapDetails_PointScale) AsChartConfigMapDetailsPointScale1() (ChartConfigMapDetailsPointScale1, error) {
 	var body ChartConfigMapDetailsPointScale1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromChartConfigMapDetailsPointScale1 overwrites any union data inside the ChartConfig_MapDetails_PointScale as the provided ChartConfigMapDetailsPointScale1
+// FromChartConfigMapDetailsPointScale1 overwrites any Union data inside the ChartConfig_MapDetails_PointScale as the provided ChartConfigMapDetailsPointScale1
 func (t *ChartConfig_MapDetails_PointScale) FromChartConfigMapDetailsPointScale1(v ChartConfigMapDetailsPointScale1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeChartConfigMapDetailsPointScale1 performs a merge with any union data inside the ChartConfig_MapDetails_PointScale, using the provided ChartConfigMapDetailsPointScale1
+// MergeChartConfigMapDetailsPointScale1 performs a merge with any Union data inside the ChartConfig_MapDetails_PointScale, using the provided ChartConfigMapDetailsPointScale1
 func (t *ChartConfig_MapDetails_PointScale) MergeChartConfigMapDetailsPointScale1(v ChartConfigMapDetailsPointScale1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t ChartConfig_MapDetails_PointScale) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *ChartConfig_MapDetails_PointScale) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsContainerCommand0 returns the union data inside the Container_Command as a ContainerCommand0
+// AsContainerCommand0 returns the Union data inside the Container_Command as a ContainerCommand0
 func (t Container_Command) AsContainerCommand0() (ContainerCommand0, error) {
 	var body ContainerCommand0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromContainerCommand0 overwrites any union data inside the Container_Command as the provided ContainerCommand0
+// FromContainerCommand0 overwrites any Union data inside the Container_Command as the provided ContainerCommand0
 func (t *Container_Command) FromContainerCommand0(v ContainerCommand0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeContainerCommand0 performs a merge with any union data inside the Container_Command, using the provided ContainerCommand0
+// MergeContainerCommand0 performs a merge with any Union data inside the Container_Command, using the provided ContainerCommand0
 func (t *Container_Command) MergeContainerCommand0(v ContainerCommand0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsContainerCommand1 returns the union data inside the Container_Command as a ContainerCommand1
+// AsContainerCommand1 returns the Union data inside the Container_Command as a ContainerCommand1
 func (t Container_Command) AsContainerCommand1() (ContainerCommand1, error) {
 	var body ContainerCommand1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromContainerCommand1 overwrites any union data inside the Container_Command as the provided ContainerCommand1
+// FromContainerCommand1 overwrites any Union data inside the Container_Command as the provided ContainerCommand1
 func (t *Container_Command) FromContainerCommand1(v ContainerCommand1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeContainerCommand1 performs a merge with any union data inside the Container_Command, using the provided ContainerCommand1
+// MergeContainerCommand1 performs a merge with any Union data inside the Container_Command, using the provided ContainerCommand1
 func (t *Container_Command) MergeContainerCommand1(v ContainerCommand1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t Container_Command) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *Container_Command) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsDatatypePreviewInput0 returns the union data inside the DatatypePreviewInput as a DatatypePreviewInput0
+// AsDatatypePreviewInput0 returns the Union data inside the DatatypePreviewInput as a DatatypePreviewInput0
 func (t DatatypePreviewInput) AsDatatypePreviewInput0() (DatatypePreviewInput0, error) {
 	var body DatatypePreviewInput0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromDatatypePreviewInput0 overwrites any union data inside the DatatypePreviewInput as the provided DatatypePreviewInput0
+// FromDatatypePreviewInput0 overwrites any Union data inside the DatatypePreviewInput as the provided DatatypePreviewInput0
 func (t *DatatypePreviewInput) FromDatatypePreviewInput0(v DatatypePreviewInput0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeDatatypePreviewInput0 performs a merge with any union data inside the DatatypePreviewInput, using the provided DatatypePreviewInput0
+// MergeDatatypePreviewInput0 performs a merge with any Union data inside the DatatypePreviewInput, using the provided DatatypePreviewInput0
 func (t *DatatypePreviewInput) MergeDatatypePreviewInput0(v DatatypePreviewInput0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsDatatypePreviewInput1 returns the union data inside the DatatypePreviewInput as a DatatypePreviewInput1
+// AsDatatypePreviewInput1 returns the Union data inside the DatatypePreviewInput as a DatatypePreviewInput1
 func (t DatatypePreviewInput) AsDatatypePreviewInput1() (DatatypePreviewInput1, error) {
 	var body DatatypePreviewInput1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromDatatypePreviewInput1 overwrites any union data inside the DatatypePreviewInput as the provided DatatypePreviewInput1
+// FromDatatypePreviewInput1 overwrites any Union data inside the DatatypePreviewInput as the provided DatatypePreviewInput1
 func (t *DatatypePreviewInput) FromDatatypePreviewInput1(v DatatypePreviewInput1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeDatatypePreviewInput1 performs a merge with any union data inside the DatatypePreviewInput, using the provided DatatypePreviewInput1
+// MergeDatatypePreviewInput1 performs a merge with any Union data inside the DatatypePreviewInput, using the provided DatatypePreviewInput1
 func (t *DatatypePreviewInput) MergeDatatypePreviewInput1(v DatatypePreviewInput1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t DatatypePreviewInput) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *DatatypePreviewInput) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsEventBreakerRuleParser0 returns the union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser0
+// AsEventBreakerRuleParser0 returns the Union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser0
 func (t EventBreakerRule_Parser) AsEventBreakerRuleParser0() (EventBreakerRuleParser0, error) {
 	var body EventBreakerRuleParser0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleParser0 overwrites any union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser0
+// FromEventBreakerRuleParser0 overwrites any Union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser0
 func (t *EventBreakerRule_Parser) FromEventBreakerRuleParser0(v EventBreakerRuleParser0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleParser0 performs a merge with any union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser0
+// MergeEventBreakerRuleParser0 performs a merge with any Union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser0
 func (t *EventBreakerRule_Parser) MergeEventBreakerRuleParser0(v EventBreakerRuleParser0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsEventBreakerRuleParser1 returns the union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser1
+// AsEventBreakerRuleParser1 returns the Union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser1
 func (t EventBreakerRule_Parser) AsEventBreakerRuleParser1() (EventBreakerRuleParser1, error) {
 	var body EventBreakerRuleParser1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleParser1 overwrites any union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser1
+// FromEventBreakerRuleParser1 overwrites any Union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser1
 func (t *EventBreakerRule_Parser) FromEventBreakerRuleParser1(v EventBreakerRuleParser1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleParser1 performs a merge with any union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser1
+// MergeEventBreakerRuleParser1 performs a merge with any Union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser1
 func (t *EventBreakerRule_Parser) MergeEventBreakerRuleParser1(v EventBreakerRuleParser1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsEventBreakerRuleParser2 returns the union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser2
+// AsEventBreakerRuleParser2 returns the Union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser2
 func (t EventBreakerRule_Parser) AsEventBreakerRuleParser2() (EventBreakerRuleParser2, error) {
 	var body EventBreakerRuleParser2
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleParser2 overwrites any union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser2
+// FromEventBreakerRuleParser2 overwrites any Union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser2
 func (t *EventBreakerRule_Parser) FromEventBreakerRuleParser2(v EventBreakerRuleParser2) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleParser2 performs a merge with any union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser2
+// MergeEventBreakerRuleParser2 performs a merge with any Union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser2
 func (t *EventBreakerRule_Parser) MergeEventBreakerRuleParser2(v EventBreakerRuleParser2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsEventBreakerRuleParser3 returns the union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser3
+// AsEventBreakerRuleParser3 returns the Union data inside the EventBreakerRule_Parser as a EventBreakerRuleParser3
 func (t EventBreakerRule_Parser) AsEventBreakerRuleParser3() (EventBreakerRuleParser3, error) {
 	var body EventBreakerRuleParser3
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleParser3 overwrites any union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser3
+// FromEventBreakerRuleParser3 overwrites any Union data inside the EventBreakerRule_Parser as the provided EventBreakerRuleParser3
 func (t *EventBreakerRule_Parser) FromEventBreakerRuleParser3(v EventBreakerRuleParser3) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleParser3 performs a merge with any union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser3
+// MergeEventBreakerRuleParser3 performs a merge with any Union data inside the EventBreakerRule_Parser, using the provided EventBreakerRuleParser3
 func (t *EventBreakerRule_Parser) MergeEventBreakerRuleParser3(v EventBreakerRuleParser3) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t EventBreakerRule_Parser) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *EventBreakerRule_Parser) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsEventBreakerRuleTimestampTimezone0 returns the union data inside the EventBreakerRule_TimestampTimezone as a EventBreakerRuleTimestampTimezone0
+// AsEventBreakerRuleTimestampTimezone0 returns the Union data inside the EventBreakerRule_TimestampTimezone as a EventBreakerRuleTimestampTimezone0
 func (t EventBreakerRule_TimestampTimezone) AsEventBreakerRuleTimestampTimezone0() (EventBreakerRuleTimestampTimezone0, error) {
 	var body EventBreakerRuleTimestampTimezone0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleTimestampTimezone0 overwrites any union data inside the EventBreakerRule_TimestampTimezone as the provided EventBreakerRuleTimestampTimezone0
+// FromEventBreakerRuleTimestampTimezone0 overwrites any Union data inside the EventBreakerRule_TimestampTimezone as the provided EventBreakerRuleTimestampTimezone0
 func (t *EventBreakerRule_TimestampTimezone) FromEventBreakerRuleTimestampTimezone0(v EventBreakerRuleTimestampTimezone0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleTimestampTimezone0 performs a merge with any union data inside the EventBreakerRule_TimestampTimezone, using the provided EventBreakerRuleTimestampTimezone0
+// MergeEventBreakerRuleTimestampTimezone0 performs a merge with any Union data inside the EventBreakerRule_TimestampTimezone, using the provided EventBreakerRuleTimestampTimezone0
 func (t *EventBreakerRule_TimestampTimezone) MergeEventBreakerRuleTimestampTimezone0(v EventBreakerRuleTimestampTimezone0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsEventBreakerRuleTimestampTimezone1 returns the union data inside the EventBreakerRule_TimestampTimezone as a EventBreakerRuleTimestampTimezone1
+// AsEventBreakerRuleTimestampTimezone1 returns the Union data inside the EventBreakerRule_TimestampTimezone as a EventBreakerRuleTimestampTimezone1
 func (t EventBreakerRule_TimestampTimezone) AsEventBreakerRuleTimestampTimezone1() (EventBreakerRuleTimestampTimezone1, error) {
 	var body EventBreakerRuleTimestampTimezone1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromEventBreakerRuleTimestampTimezone1 overwrites any union data inside the EventBreakerRule_TimestampTimezone as the provided EventBreakerRuleTimestampTimezone1
+// FromEventBreakerRuleTimestampTimezone1 overwrites any Union data inside the EventBreakerRule_TimestampTimezone as the provided EventBreakerRuleTimestampTimezone1
 func (t *EventBreakerRule_TimestampTimezone) FromEventBreakerRuleTimestampTimezone1(v EventBreakerRuleTimestampTimezone1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeEventBreakerRuleTimestampTimezone1 performs a merge with any union data inside the EventBreakerRule_TimestampTimezone, using the provided EventBreakerRuleTimestampTimezone1
+// MergeEventBreakerRuleTimestampTimezone1 performs a merge with any Union data inside the EventBreakerRule_TimestampTimezone, using the provided EventBreakerRuleTimestampTimezone1
 func (t *EventBreakerRule_TimestampTimezone) MergeEventBreakerRuleTimestampTimezone1(v EventBreakerRuleTimestampTimezone1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t EventBreakerRule_TimestampTimezone) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *EventBreakerRule_TimestampTimezone) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsGitInfoRemote0 returns the union data inside the GitInfo_Remote as a GitInfoRemote0
+// AsGitInfoRemote0 returns the Union data inside the GitInfo_Remote as a GitInfoRemote0
 func (t GitInfo_Remote) AsGitInfoRemote0() (GitInfoRemote0, error) {
 	var body GitInfoRemote0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromGitInfoRemote0 overwrites any union data inside the GitInfo_Remote as the provided GitInfoRemote0
+// FromGitInfoRemote0 overwrites any Union data inside the GitInfo_Remote as the provided GitInfoRemote0
 func (t *GitInfo_Remote) FromGitInfoRemote0(v GitInfoRemote0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeGitInfoRemote0 performs a merge with any union data inside the GitInfo_Remote, using the provided GitInfoRemote0
+// MergeGitInfoRemote0 performs a merge with any Union data inside the GitInfo_Remote, using the provided GitInfoRemote0
 func (t *GitInfo_Remote) MergeGitInfoRemote0(v GitInfoRemote0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsGitInfoRemote1 returns the union data inside the GitInfo_Remote as a GitInfoRemote1
+// AsGitInfoRemote1 returns the Union data inside the GitInfo_Remote as a GitInfoRemote1
 func (t GitInfo_Remote) AsGitInfoRemote1() (GitInfoRemote1, error) {
 	var body GitInfoRemote1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromGitInfoRemote1 overwrites any union data inside the GitInfo_Remote as the provided GitInfoRemote1
+// FromGitInfoRemote1 overwrites any Union data inside the GitInfo_Remote as the provided GitInfoRemote1
 func (t *GitInfo_Remote) FromGitInfoRemote1(v GitInfoRemote1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeGitInfoRemote1 performs a merge with any union data inside the GitInfo_Remote, using the provided GitInfoRemote1
+// MergeGitInfoRemote1 performs a merge with any Union data inside the GitInfo_Remote, using the provided GitInfoRemote1
 func (t *GitInfo_Remote) MergeGitInfoRemote1(v GitInfoRemote1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t GitInfo_Remote) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *GitInfo_Remote) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsInputCollection returns the union data inside the Input as a InputCollection
+// AsInputCollection returns the Union data inside the Input as a InputCollection
 func (t Input) AsInputCollection() (InputCollection, error) {
 	var body InputCollection
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCollection overwrites any union data inside the Input as the provided InputCollection
+// FromInputCollection overwrites any Union data inside the Input as the provided InputCollection
 func (t *Input) FromInputCollection(v InputCollection) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCollection performs a merge with any union data inside the Input, using the provided InputCollection
+// MergeInputCollection performs a merge with any Union data inside the Input, using the provided InputCollection
 func (t *Input) MergeInputCollection(v InputCollection) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputKafka returns the union data inside the Input as a InputKafka
+// AsInputKafka returns the Union data inside the Input as a InputKafka
 func (t Input) AsInputKafka() (InputKafka, error) {
 	var body InputKafka
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputKafka overwrites any union data inside the Input as the provided InputKafka
+// FromInputKafka overwrites any Union data inside the Input as the provided InputKafka
 func (t *Input) FromInputKafka(v InputKafka) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputKafka performs a merge with any union data inside the Input, using the provided InputKafka
+// MergeInputKafka performs a merge with any Union data inside the Input, using the provided InputKafka
 func (t *Input) MergeInputKafka(v InputKafka) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputMsk returns the union data inside the Input as a InputMsk
+// AsInputMsk returns the Union data inside the Input as a InputMsk
 func (t Input) AsInputMsk() (InputMsk, error) {
 	var body InputMsk
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputMsk overwrites any union data inside the Input as the provided InputMsk
+// FromInputMsk overwrites any Union data inside the Input as the provided InputMsk
 func (t *Input) FromInputMsk(v InputMsk) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputMsk performs a merge with any union data inside the Input, using the provided InputMsk
+// MergeInputMsk performs a merge with any Union data inside the Input, using the provided InputMsk
 func (t *Input) MergeInputMsk(v InputMsk) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputHttp returns the union data inside the Input as a InputHttp
+// AsInputHttp returns the Union data inside the Input as a InputHttp
 func (t Input) AsInputHttp() (InputHttp, error) {
 	var body InputHttp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputHttp overwrites any union data inside the Input as the provided InputHttp
+// FromInputHttp overwrites any Union data inside the Input as the provided InputHttp
 func (t *Input) FromInputHttp(v InputHttp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputHttp performs a merge with any union data inside the Input, using the provided InputHttp
+// MergeInputHttp performs a merge with any Union data inside the Input, using the provided InputHttp
 func (t *Input) MergeInputHttp(v InputHttp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSplunk returns the union data inside the Input as a InputSplunk
+// AsInputSplunk returns the Union data inside the Input as a InputSplunk
 func (t Input) AsInputSplunk() (InputSplunk, error) {
 	var body InputSplunk
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSplunk overwrites any union data inside the Input as the provided InputSplunk
+// FromInputSplunk overwrites any Union data inside the Input as the provided InputSplunk
 func (t *Input) FromInputSplunk(v InputSplunk) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSplunk performs a merge with any union data inside the Input, using the provided InputSplunk
+// MergeInputSplunk performs a merge with any Union data inside the Input, using the provided InputSplunk
 func (t *Input) MergeInputSplunk(v InputSplunk) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSplunkSearch returns the union data inside the Input as a InputSplunkSearch
+// AsInputSplunkSearch returns the Union data inside the Input as a InputSplunkSearch
 func (t Input) AsInputSplunkSearch() (InputSplunkSearch, error) {
 	var body InputSplunkSearch
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSplunkSearch overwrites any union data inside the Input as the provided InputSplunkSearch
+// FromInputSplunkSearch overwrites any Union data inside the Input as the provided InputSplunkSearch
 func (t *Input) FromInputSplunkSearch(v InputSplunkSearch) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSplunkSearch performs a merge with any union data inside the Input, using the provided InputSplunkSearch
+// MergeInputSplunkSearch performs a merge with any Union data inside the Input, using the provided InputSplunkSearch
 func (t *Input) MergeInputSplunkSearch(v InputSplunkSearch) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSplunkHec returns the union data inside the Input as a InputSplunkHec
+// AsInputSplunkHec returns the Union data inside the Input as a InputSplunkHec
 func (t Input) AsInputSplunkHec() (InputSplunkHec, error) {
 	var body InputSplunkHec
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSplunkHec overwrites any union data inside the Input as the provided InputSplunkHec
+// FromInputSplunkHec overwrites any Union data inside the Input as the provided InputSplunkHec
 func (t *Input) FromInputSplunkHec(v InputSplunkHec) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSplunkHec performs a merge with any union data inside the Input, using the provided InputSplunkHec
+// MergeInputSplunkHec performs a merge with any Union data inside the Input, using the provided InputSplunkHec
 func (t *Input) MergeInputSplunkHec(v InputSplunkHec) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputAzureBlob returns the union data inside the Input as a InputAzureBlob
+// AsInputAzureBlob returns the Union data inside the Input as a InputAzureBlob
 func (t Input) AsInputAzureBlob() (InputAzureBlob, error) {
 	var body InputAzureBlob
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputAzureBlob overwrites any union data inside the Input as the provided InputAzureBlob
+// FromInputAzureBlob overwrites any Union data inside the Input as the provided InputAzureBlob
 func (t *Input) FromInputAzureBlob(v InputAzureBlob) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputAzureBlob performs a merge with any union data inside the Input, using the provided InputAzureBlob
+// MergeInputAzureBlob performs a merge with any Union data inside the Input, using the provided InputAzureBlob
 func (t *Input) MergeInputAzureBlob(v InputAzureBlob) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputElastic returns the union data inside the Input as a InputElastic
+// AsInputElastic returns the Union data inside the Input as a InputElastic
 func (t Input) AsInputElastic() (InputElastic, error) {
 	var body InputElastic
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputElastic overwrites any union data inside the Input as the provided InputElastic
+// FromInputElastic overwrites any Union data inside the Input as the provided InputElastic
 func (t *Input) FromInputElastic(v InputElastic) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputElastic performs a merge with any union data inside the Input, using the provided InputElastic
+// MergeInputElastic performs a merge with any Union data inside the Input, using the provided InputElastic
 func (t *Input) MergeInputElastic(v InputElastic) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputConfluentCloud returns the union data inside the Input as a InputConfluentCloud
+// AsInputConfluentCloud returns the Union data inside the Input as a InputConfluentCloud
 func (t Input) AsInputConfluentCloud() (InputConfluentCloud, error) {
 	var body InputConfluentCloud
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputConfluentCloud overwrites any union data inside the Input as the provided InputConfluentCloud
+// FromInputConfluentCloud overwrites any Union data inside the Input as the provided InputConfluentCloud
 func (t *Input) FromInputConfluentCloud(v InputConfluentCloud) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputConfluentCloud performs a merge with any union data inside the Input, using the provided InputConfluentCloud
+// MergeInputConfluentCloud performs a merge with any Union data inside the Input, using the provided InputConfluentCloud
 func (t *Input) MergeInputConfluentCloud(v InputConfluentCloud) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputGrafana returns the union data inside the Input as a InputGrafana
+// AsInputGrafana returns the Union data inside the Input as a InputGrafana
 func (t Input) AsInputGrafana() (InputGrafana, error) {
 	var body InputGrafana
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputGrafana overwrites any union data inside the Input as the provided InputGrafana
+// FromInputGrafana overwrites any Union data inside the Input as the provided InputGrafana
 func (t *Input) FromInputGrafana(v InputGrafana) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputGrafana performs a merge with any union data inside the Input, using the provided InputGrafana
+// MergeInputGrafana performs a merge with any Union data inside the Input, using the provided InputGrafana
 func (t *Input) MergeInputGrafana(v InputGrafana) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputLoki returns the union data inside the Input as a InputLoki
+// AsInputLoki returns the Union data inside the Input as a InputLoki
 func (t Input) AsInputLoki() (InputLoki, error) {
 	var body InputLoki
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputLoki overwrites any union data inside the Input as the provided InputLoki
+// FromInputLoki overwrites any Union data inside the Input as the provided InputLoki
 func (t *Input) FromInputLoki(v InputLoki) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputLoki performs a merge with any union data inside the Input, using the provided InputLoki
+// MergeInputLoki performs a merge with any Union data inside the Input, using the provided InputLoki
 func (t *Input) MergeInputLoki(v InputLoki) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputPrometheusRw returns the union data inside the Input as a InputPrometheusRw
+// AsInputPrometheusRw returns the Union data inside the Input as a InputPrometheusRw
 func (t Input) AsInputPrometheusRw() (InputPrometheusRw, error) {
 	var body InputPrometheusRw
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputPrometheusRw overwrites any union data inside the Input as the provided InputPrometheusRw
+// FromInputPrometheusRw overwrites any Union data inside the Input as the provided InputPrometheusRw
 func (t *Input) FromInputPrometheusRw(v InputPrometheusRw) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputPrometheusRw performs a merge with any union data inside the Input, using the provided InputPrometheusRw
+// MergeInputPrometheusRw performs a merge with any Union data inside the Input, using the provided InputPrometheusRw
 func (t *Input) MergeInputPrometheusRw(v InputPrometheusRw) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputPrometheus returns the union data inside the Input as a InputPrometheus
+// AsInputPrometheus returns the Union data inside the Input as a InputPrometheus
 func (t Input) AsInputPrometheus() (InputPrometheus, error) {
 	var body InputPrometheus
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputPrometheus overwrites any union data inside the Input as the provided InputPrometheus
+// FromInputPrometheus overwrites any Union data inside the Input as the provided InputPrometheus
 func (t *Input) FromInputPrometheus(v InputPrometheus) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputPrometheus performs a merge with any union data inside the Input, using the provided InputPrometheus
+// MergeInputPrometheus performs a merge with any Union data inside the Input, using the provided InputPrometheus
 func (t *Input) MergeInputPrometheus(v InputPrometheus) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputEdgePrometheus returns the union data inside the Input as a InputEdgePrometheus
+// AsInputEdgePrometheus returns the Union data inside the Input as a InputEdgePrometheus
 func (t Input) AsInputEdgePrometheus() (InputEdgePrometheus, error) {
 	var body InputEdgePrometheus
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputEdgePrometheus overwrites any union data inside the Input as the provided InputEdgePrometheus
+// FromInputEdgePrometheus overwrites any Union data inside the Input as the provided InputEdgePrometheus
 func (t *Input) FromInputEdgePrometheus(v InputEdgePrometheus) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputEdgePrometheus performs a merge with any union data inside the Input, using the provided InputEdgePrometheus
+// MergeInputEdgePrometheus performs a merge with any Union data inside the Input, using the provided InputEdgePrometheus
 func (t *Input) MergeInputEdgePrometheus(v InputEdgePrometheus) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputOffice365Mgmt returns the union data inside the Input as a InputOffice365Mgmt
+// AsInputOffice365Mgmt returns the Union data inside the Input as a InputOffice365Mgmt
 func (t Input) AsInputOffice365Mgmt() (InputOffice365Mgmt, error) {
 	var body InputOffice365Mgmt
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputOffice365Mgmt overwrites any union data inside the Input as the provided InputOffice365Mgmt
+// FromInputOffice365Mgmt overwrites any Union data inside the Input as the provided InputOffice365Mgmt
 func (t *Input) FromInputOffice365Mgmt(v InputOffice365Mgmt) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputOffice365Mgmt performs a merge with any union data inside the Input, using the provided InputOffice365Mgmt
+// MergeInputOffice365Mgmt performs a merge with any Union data inside the Input, using the provided InputOffice365Mgmt
 func (t *Input) MergeInputOffice365Mgmt(v InputOffice365Mgmt) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputOffice365Service returns the union data inside the Input as a InputOffice365Service
+// AsInputOffice365Service returns the Union data inside the Input as a InputOffice365Service
 func (t Input) AsInputOffice365Service() (InputOffice365Service, error) {
 	var body InputOffice365Service
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputOffice365Service overwrites any union data inside the Input as the provided InputOffice365Service
+// FromInputOffice365Service overwrites any Union data inside the Input as the provided InputOffice365Service
 func (t *Input) FromInputOffice365Service(v InputOffice365Service) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputOffice365Service performs a merge with any union data inside the Input, using the provided InputOffice365Service
+// MergeInputOffice365Service performs a merge with any Union data inside the Input, using the provided InputOffice365Service
 func (t *Input) MergeInputOffice365Service(v InputOffice365Service) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputOffice365MsgTrace returns the union data inside the Input as a InputOffice365MsgTrace
+// AsInputOffice365MsgTrace returns the Union data inside the Input as a InputOffice365MsgTrace
 func (t Input) AsInputOffice365MsgTrace() (InputOffice365MsgTrace, error) {
 	var body InputOffice365MsgTrace
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputOffice365MsgTrace overwrites any union data inside the Input as the provided InputOffice365MsgTrace
+// FromInputOffice365MsgTrace overwrites any Union data inside the Input as the provided InputOffice365MsgTrace
 func (t *Input) FromInputOffice365MsgTrace(v InputOffice365MsgTrace) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputOffice365MsgTrace performs a merge with any union data inside the Input, using the provided InputOffice365MsgTrace
+// MergeInputOffice365MsgTrace performs a merge with any Union data inside the Input, using the provided InputOffice365MsgTrace
 func (t *Input) MergeInputOffice365MsgTrace(v InputOffice365MsgTrace) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputEventhub returns the union data inside the Input as a InputEventhub
+// AsInputEventhub returns the Union data inside the Input as a InputEventhub
 func (t Input) AsInputEventhub() (InputEventhub, error) {
 	var body InputEventhub
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputEventhub overwrites any union data inside the Input as the provided InputEventhub
+// FromInputEventhub overwrites any Union data inside the Input as the provided InputEventhub
 func (t *Input) FromInputEventhub(v InputEventhub) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputEventhub performs a merge with any union data inside the Input, using the provided InputEventhub
+// MergeInputEventhub performs a merge with any Union data inside the Input, using the provided InputEventhub
 func (t *Input) MergeInputEventhub(v InputEventhub) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputExec returns the union data inside the Input as a InputExec
+// AsInputExec returns the Union data inside the Input as a InputExec
 func (t Input) AsInputExec() (InputExec, error) {
 	var body InputExec
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputExec overwrites any union data inside the Input as the provided InputExec
+// FromInputExec overwrites any Union data inside the Input as the provided InputExec
 func (t *Input) FromInputExec(v InputExec) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputExec performs a merge with any union data inside the Input, using the provided InputExec
+// MergeInputExec performs a merge with any Union data inside the Input, using the provided InputExec
 func (t *Input) MergeInputExec(v InputExec) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputFirehose returns the union data inside the Input as a InputFirehose
+// AsInputFirehose returns the Union data inside the Input as a InputFirehose
 func (t Input) AsInputFirehose() (InputFirehose, error) {
 	var body InputFirehose
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputFirehose overwrites any union data inside the Input as the provided InputFirehose
+// FromInputFirehose overwrites any Union data inside the Input as the provided InputFirehose
 func (t *Input) FromInputFirehose(v InputFirehose) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputFirehose performs a merge with any union data inside the Input, using the provided InputFirehose
+// MergeInputFirehose performs a merge with any Union data inside the Input, using the provided InputFirehose
 func (t *Input) MergeInputFirehose(v InputFirehose) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputGooglePubsub returns the union data inside the Input as a InputGooglePubsub
+// AsInputGooglePubsub returns the Union data inside the Input as a InputGooglePubsub
 func (t Input) AsInputGooglePubsub() (InputGooglePubsub, error) {
 	var body InputGooglePubsub
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputGooglePubsub overwrites any union data inside the Input as the provided InputGooglePubsub
+// FromInputGooglePubsub overwrites any Union data inside the Input as the provided InputGooglePubsub
 func (t *Input) FromInputGooglePubsub(v InputGooglePubsub) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputGooglePubsub performs a merge with any union data inside the Input, using the provided InputGooglePubsub
+// MergeInputGooglePubsub performs a merge with any Union data inside the Input, using the provided InputGooglePubsub
 func (t *Input) MergeInputGooglePubsub(v InputGooglePubsub) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputCribl returns the union data inside the Input as a InputCribl
+// AsInputCribl returns the Union data inside the Input as a InputCribl
 func (t Input) AsInputCribl() (InputCribl, error) {
 	var body InputCribl
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCribl overwrites any union data inside the Input as the provided InputCribl
+// FromInputCribl overwrites any Union data inside the Input as the provided InputCribl
 func (t *Input) FromInputCribl(v InputCribl) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCribl performs a merge with any union data inside the Input, using the provided InputCribl
+// MergeInputCribl performs a merge with any Union data inside the Input, using the provided InputCribl
 func (t *Input) MergeInputCribl(v InputCribl) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputCriblTcp returns the union data inside the Input as a InputCriblTcp
+// AsInputCriblTcp returns the Union data inside the Input as a InputCriblTcp
 func (t Input) AsInputCriblTcp() (InputCriblTcp, error) {
 	var body InputCriblTcp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCriblTcp overwrites any union data inside the Input as the provided InputCriblTcp
+// FromInputCriblTcp overwrites any Union data inside the Input as the provided InputCriblTcp
 func (t *Input) FromInputCriblTcp(v InputCriblTcp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCriblTcp performs a merge with any union data inside the Input, using the provided InputCriblTcp
+// MergeInputCriblTcp performs a merge with any Union data inside the Input, using the provided InputCriblTcp
 func (t *Input) MergeInputCriblTcp(v InputCriblTcp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputCriblHttp returns the union data inside the Input as a InputCriblHttp
+// AsInputCriblHttp returns the Union data inside the Input as a InputCriblHttp
 func (t Input) AsInputCriblHttp() (InputCriblHttp, error) {
 	var body InputCriblHttp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCriblHttp overwrites any union data inside the Input as the provided InputCriblHttp
+// FromInputCriblHttp overwrites any Union data inside the Input as the provided InputCriblHttp
 func (t *Input) FromInputCriblHttp(v InputCriblHttp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCriblHttp performs a merge with any union data inside the Input, using the provided InputCriblHttp
+// MergeInputCriblHttp performs a merge with any Union data inside the Input, using the provided InputCriblHttp
 func (t *Input) MergeInputCriblHttp(v InputCriblHttp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputTcpjson returns the union data inside the Input as a InputTcpjson
+// AsInputTcpjson returns the Union data inside the Input as a InputTcpjson
 func (t Input) AsInputTcpjson() (InputTcpjson, error) {
 	var body InputTcpjson
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputTcpjson overwrites any union data inside the Input as the provided InputTcpjson
+// FromInputTcpjson overwrites any Union data inside the Input as the provided InputTcpjson
 func (t *Input) FromInputTcpjson(v InputTcpjson) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputTcpjson performs a merge with any union data inside the Input, using the provided InputTcpjson
+// MergeInputTcpjson performs a merge with any Union data inside the Input, using the provided InputTcpjson
 func (t *Input) MergeInputTcpjson(v InputTcpjson) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSystemMetrics returns the union data inside the Input as a InputSystemMetrics
+// AsInputSystemMetrics returns the Union data inside the Input as a InputSystemMetrics
 func (t Input) AsInputSystemMetrics() (InputSystemMetrics, error) {
 	var body InputSystemMetrics
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSystemMetrics overwrites any union data inside the Input as the provided InputSystemMetrics
+// FromInputSystemMetrics overwrites any Union data inside the Input as the provided InputSystemMetrics
 func (t *Input) FromInputSystemMetrics(v InputSystemMetrics) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSystemMetrics performs a merge with any union data inside the Input, using the provided InputSystemMetrics
+// MergeInputSystemMetrics performs a merge with any Union data inside the Input, using the provided InputSystemMetrics
 func (t *Input) MergeInputSystemMetrics(v InputSystemMetrics) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSystemState returns the union data inside the Input as a InputSystemState
+// AsInputSystemState returns the Union data inside the Input as a InputSystemState
 func (t Input) AsInputSystemState() (InputSystemState, error) {
 	var body InputSystemState
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSystemState overwrites any union data inside the Input as the provided InputSystemState
+// FromInputSystemState overwrites any Union data inside the Input as the provided InputSystemState
 func (t *Input) FromInputSystemState(v InputSystemState) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSystemState performs a merge with any union data inside the Input, using the provided InputSystemState
+// MergeInputSystemState performs a merge with any Union data inside the Input, using the provided InputSystemState
 func (t *Input) MergeInputSystemState(v InputSystemState) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputKubeMetrics returns the union data inside the Input as a InputKubeMetrics
+// AsInputKubeMetrics returns the Union data inside the Input as a InputKubeMetrics
 func (t Input) AsInputKubeMetrics() (InputKubeMetrics, error) {
 	var body InputKubeMetrics
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputKubeMetrics overwrites any union data inside the Input as the provided InputKubeMetrics
+// FromInputKubeMetrics overwrites any Union data inside the Input as the provided InputKubeMetrics
 func (t *Input) FromInputKubeMetrics(v InputKubeMetrics) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputKubeMetrics performs a merge with any union data inside the Input, using the provided InputKubeMetrics
+// MergeInputKubeMetrics performs a merge with any Union data inside the Input, using the provided InputKubeMetrics
 func (t *Input) MergeInputKubeMetrics(v InputKubeMetrics) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputKubeLogs returns the union data inside the Input as a InputKubeLogs
+// AsInputKubeLogs returns the Union data inside the Input as a InputKubeLogs
 func (t Input) AsInputKubeLogs() (InputKubeLogs, error) {
 	var body InputKubeLogs
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputKubeLogs overwrites any union data inside the Input as the provided InputKubeLogs
+// FromInputKubeLogs overwrites any Union data inside the Input as the provided InputKubeLogs
 func (t *Input) FromInputKubeLogs(v InputKubeLogs) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputKubeLogs performs a merge with any union data inside the Input, using the provided InputKubeLogs
+// MergeInputKubeLogs performs a merge with any Union data inside the Input, using the provided InputKubeLogs
 func (t *Input) MergeInputKubeLogs(v InputKubeLogs) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputKubeEvents returns the union data inside the Input as a InputKubeEvents
+// AsInputKubeEvents returns the Union data inside the Input as a InputKubeEvents
 func (t Input) AsInputKubeEvents() (InputKubeEvents, error) {
 	var body InputKubeEvents
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputKubeEvents overwrites any union data inside the Input as the provided InputKubeEvents
+// FromInputKubeEvents overwrites any Union data inside the Input as the provided InputKubeEvents
 func (t *Input) FromInputKubeEvents(v InputKubeEvents) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputKubeEvents performs a merge with any union data inside the Input, using the provided InputKubeEvents
+// MergeInputKubeEvents performs a merge with any Union data inside the Input, using the provided InputKubeEvents
 func (t *Input) MergeInputKubeEvents(v InputKubeEvents) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputWindowsMetrics returns the union data inside the Input as a InputWindowsMetrics
+// AsInputWindowsMetrics returns the Union data inside the Input as a InputWindowsMetrics
 func (t Input) AsInputWindowsMetrics() (InputWindowsMetrics, error) {
 	var body InputWindowsMetrics
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputWindowsMetrics overwrites any union data inside the Input as the provided InputWindowsMetrics
+// FromInputWindowsMetrics overwrites any Union data inside the Input as the provided InputWindowsMetrics
 func (t *Input) FromInputWindowsMetrics(v InputWindowsMetrics) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputWindowsMetrics performs a merge with any union data inside the Input, using the provided InputWindowsMetrics
+// MergeInputWindowsMetrics performs a merge with any Union data inside the Input, using the provided InputWindowsMetrics
 func (t *Input) MergeInputWindowsMetrics(v InputWindowsMetrics) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputCrowdstrike returns the union data inside the Input as a InputCrowdstrike
+// AsInputCrowdstrike returns the Union data inside the Input as a InputCrowdstrike
 func (t Input) AsInputCrowdstrike() (InputCrowdstrike, error) {
 	var body InputCrowdstrike
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCrowdstrike overwrites any union data inside the Input as the provided InputCrowdstrike
+// FromInputCrowdstrike overwrites any Union data inside the Input as the provided InputCrowdstrike
 func (t *Input) FromInputCrowdstrike(v InputCrowdstrike) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCrowdstrike performs a merge with any union data inside the Input, using the provided InputCrowdstrike
+// MergeInputCrowdstrike performs a merge with any Union data inside the Input, using the provided InputCrowdstrike
 func (t *Input) MergeInputCrowdstrike(v InputCrowdstrike) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputDatadogAgent returns the union data inside the Input as a InputDatadogAgent
+// AsInputDatadogAgent returns the Union data inside the Input as a InputDatadogAgent
 func (t Input) AsInputDatadogAgent() (InputDatadogAgent, error) {
 	var body InputDatadogAgent
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputDatadogAgent overwrites any union data inside the Input as the provided InputDatadogAgent
+// FromInputDatadogAgent overwrites any Union data inside the Input as the provided InputDatadogAgent
 func (t *Input) FromInputDatadogAgent(v InputDatadogAgent) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputDatadogAgent performs a merge with any union data inside the Input, using the provided InputDatadogAgent
+// MergeInputDatadogAgent performs a merge with any Union data inside the Input, using the provided InputDatadogAgent
 func (t *Input) MergeInputDatadogAgent(v InputDatadogAgent) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputDatagen returns the union data inside the Input as a InputDatagen
+// AsInputDatagen returns the Union data inside the Input as a InputDatagen
 func (t Input) AsInputDatagen() (InputDatagen, error) {
 	var body InputDatagen
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputDatagen overwrites any union data inside the Input as the provided InputDatagen
+// FromInputDatagen overwrites any Union data inside the Input as the provided InputDatagen
 func (t *Input) FromInputDatagen(v InputDatagen) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputDatagen performs a merge with any union data inside the Input, using the provided InputDatagen
+// MergeInputDatagen performs a merge with any Union data inside the Input, using the provided InputDatagen
 func (t *Input) MergeInputDatagen(v InputDatagen) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputHttpRaw returns the union data inside the Input as a InputHttpRaw
+// AsInputHttpRaw returns the Union data inside the Input as a InputHttpRaw
 func (t Input) AsInputHttpRaw() (InputHttpRaw, error) {
 	var body InputHttpRaw
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputHttpRaw overwrites any union data inside the Input as the provided InputHttpRaw
+// FromInputHttpRaw overwrites any Union data inside the Input as the provided InputHttpRaw
 func (t *Input) FromInputHttpRaw(v InputHttpRaw) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputHttpRaw performs a merge with any union data inside the Input, using the provided InputHttpRaw
+// MergeInputHttpRaw performs a merge with any Union data inside the Input, using the provided InputHttpRaw
 func (t *Input) MergeInputHttpRaw(v InputHttpRaw) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputKinesis returns the union data inside the Input as a InputKinesis
+// AsInputKinesis returns the Union data inside the Input as a InputKinesis
 func (t Input) AsInputKinesis() (InputKinesis, error) {
 	var body InputKinesis
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputKinesis overwrites any union data inside the Input as the provided InputKinesis
+// FromInputKinesis overwrites any Union data inside the Input as the provided InputKinesis
 func (t *Input) FromInputKinesis(v InputKinesis) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputKinesis performs a merge with any union data inside the Input, using the provided InputKinesis
+// MergeInputKinesis performs a merge with any Union data inside the Input, using the provided InputKinesis
 func (t *Input) MergeInputKinesis(v InputKinesis) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputCriblmetrics returns the union data inside the Input as a InputCriblmetrics
+// AsInputCriblmetrics returns the Union data inside the Input as a InputCriblmetrics
 func (t Input) AsInputCriblmetrics() (InputCriblmetrics, error) {
 	var body InputCriblmetrics
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputCriblmetrics overwrites any union data inside the Input as the provided InputCriblmetrics
+// FromInputCriblmetrics overwrites any Union data inside the Input as the provided InputCriblmetrics
 func (t *Input) FromInputCriblmetrics(v InputCriblmetrics) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputCriblmetrics performs a merge with any union data inside the Input, using the provided InputCriblmetrics
+// MergeInputCriblmetrics performs a merge with any Union data inside the Input, using the provided InputCriblmetrics
 func (t *Input) MergeInputCriblmetrics(v InputCriblmetrics) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputMetrics returns the union data inside the Input as a InputMetrics
+// AsInputMetrics returns the Union data inside the Input as a InputMetrics
 func (t Input) AsInputMetrics() (InputMetrics, error) {
 	var body InputMetrics
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputMetrics overwrites any union data inside the Input as the provided InputMetrics
+// FromInputMetrics overwrites any Union data inside the Input as the provided InputMetrics
 func (t *Input) FromInputMetrics(v InputMetrics) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputMetrics performs a merge with any union data inside the Input, using the provided InputMetrics
+// MergeInputMetrics performs a merge with any Union data inside the Input, using the provided InputMetrics
 func (t *Input) MergeInputMetrics(v InputMetrics) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputS3 returns the union data inside the Input as a InputS3
+// AsInputS3 returns the Union data inside the Input as a InputS3
 func (t Input) AsInputS3() (InputS3, error) {
 	var body InputS3
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputS3 overwrites any union data inside the Input as the provided InputS3
+// FromInputS3 overwrites any Union data inside the Input as the provided InputS3
 func (t *Input) FromInputS3(v InputS3) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputS3 performs a merge with any union data inside the Input, using the provided InputS3
+// MergeInputS3 performs a merge with any Union data inside the Input, using the provided InputS3
 func (t *Input) MergeInputS3(v InputS3) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputS3Inventory returns the union data inside the Input as a InputS3Inventory
+// AsInputS3Inventory returns the Union data inside the Input as a InputS3Inventory
 func (t Input) AsInputS3Inventory() (InputS3Inventory, error) {
 	var body InputS3Inventory
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputS3Inventory overwrites any union data inside the Input as the provided InputS3Inventory
+// FromInputS3Inventory overwrites any Union data inside the Input as the provided InputS3Inventory
 func (t *Input) FromInputS3Inventory(v InputS3Inventory) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputS3Inventory performs a merge with any union data inside the Input, using the provided InputS3Inventory
+// MergeInputS3Inventory performs a merge with any Union data inside the Input, using the provided InputS3Inventory
 func (t *Input) MergeInputS3Inventory(v InputS3Inventory) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSnmp returns the union data inside the Input as a InputSnmp
+// AsInputSnmp returns the Union data inside the Input as a InputSnmp
 func (t Input) AsInputSnmp() (InputSnmp, error) {
 	var body InputSnmp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSnmp overwrites any union data inside the Input as the provided InputSnmp
+// FromInputSnmp overwrites any Union data inside the Input as the provided InputSnmp
 func (t *Input) FromInputSnmp(v InputSnmp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSnmp performs a merge with any union data inside the Input, using the provided InputSnmp
+// MergeInputSnmp performs a merge with any Union data inside the Input, using the provided InputSnmp
 func (t *Input) MergeInputSnmp(v InputSnmp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputOpenTelemetry returns the union data inside the Input as a InputOpenTelemetry
+// AsInputOpenTelemetry returns the Union data inside the Input as a InputOpenTelemetry
 func (t Input) AsInputOpenTelemetry() (InputOpenTelemetry, error) {
 	var body InputOpenTelemetry
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputOpenTelemetry overwrites any union data inside the Input as the provided InputOpenTelemetry
+// FromInputOpenTelemetry overwrites any Union data inside the Input as the provided InputOpenTelemetry
 func (t *Input) FromInputOpenTelemetry(v InputOpenTelemetry) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputOpenTelemetry performs a merge with any union data inside the Input, using the provided InputOpenTelemetry
+// MergeInputOpenTelemetry performs a merge with any Union data inside the Input, using the provided InputOpenTelemetry
 func (t *Input) MergeInputOpenTelemetry(v InputOpenTelemetry) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputModelDrivenTelemetry returns the union data inside the Input as a InputModelDrivenTelemetry
+// AsInputModelDrivenTelemetry returns the Union data inside the Input as a InputModelDrivenTelemetry
 func (t Input) AsInputModelDrivenTelemetry() (InputModelDrivenTelemetry, error) {
 	var body InputModelDrivenTelemetry
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputModelDrivenTelemetry overwrites any union data inside the Input as the provided InputModelDrivenTelemetry
+// FromInputModelDrivenTelemetry overwrites any Union data inside the Input as the provided InputModelDrivenTelemetry
 func (t *Input) FromInputModelDrivenTelemetry(v InputModelDrivenTelemetry) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputModelDrivenTelemetry performs a merge with any union data inside the Input, using the provided InputModelDrivenTelemetry
+// MergeInputModelDrivenTelemetry performs a merge with any Union data inside the Input, using the provided InputModelDrivenTelemetry
 func (t *Input) MergeInputModelDrivenTelemetry(v InputModelDrivenTelemetry) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSqs returns the union data inside the Input as a InputSqs
+// AsInputSqs returns the Union data inside the Input as a InputSqs
 func (t Input) AsInputSqs() (InputSqs, error) {
 	var body InputSqs
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSqs overwrites any union data inside the Input as the provided InputSqs
+// FromInputSqs overwrites any Union data inside the Input as the provided InputSqs
 func (t *Input) FromInputSqs(v InputSqs) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSqs performs a merge with any union data inside the Input, using the provided InputSqs
+// MergeInputSqs performs a merge with any Union data inside the Input, using the provided InputSqs
 func (t *Input) MergeInputSqs(v InputSqs) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSyslog returns the union data inside the Input as a InputSyslog
+// AsInputSyslog returns the Union data inside the Input as a InputSyslog
 func (t Input) AsInputSyslog() (InputSyslog, error) {
 	var body InputSyslog
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSyslog overwrites any union data inside the Input as the provided InputSyslog
+// FromInputSyslog overwrites any Union data inside the Input as the provided InputSyslog
 func (t *Input) FromInputSyslog(v InputSyslog) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSyslog performs a merge with any union data inside the Input, using the provided InputSyslog
+// MergeInputSyslog performs a merge with any Union data inside the Input, using the provided InputSyslog
 func (t *Input) MergeInputSyslog(v InputSyslog) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputFile returns the union data inside the Input as a InputFile
+// AsInputFile returns the Union data inside the Input as a InputFile
 func (t Input) AsInputFile() (InputFile, error) {
 	var body InputFile
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputFile overwrites any union data inside the Input as the provided InputFile
+// FromInputFile overwrites any Union data inside the Input as the provided InputFile
 func (t *Input) FromInputFile(v InputFile) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputFile performs a merge with any union data inside the Input, using the provided InputFile
+// MergeInputFile performs a merge with any Union data inside the Input, using the provided InputFile
 func (t *Input) MergeInputFile(v InputFile) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputTcp returns the union data inside the Input as a InputTcp
+// AsInputTcp returns the Union data inside the Input as a InputTcp
 func (t Input) AsInputTcp() (InputTcp, error) {
 	var body InputTcp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputTcp overwrites any union data inside the Input as the provided InputTcp
+// FromInputTcp overwrites any Union data inside the Input as the provided InputTcp
 func (t *Input) FromInputTcp(v InputTcp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputTcp performs a merge with any union data inside the Input, using the provided InputTcp
+// MergeInputTcp performs a merge with any Union data inside the Input, using the provided InputTcp
 func (t *Input) MergeInputTcp(v InputTcp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputAppscope returns the union data inside the Input as a InputAppscope
+// AsInputAppscope returns the Union data inside the Input as a InputAppscope
 func (t Input) AsInputAppscope() (InputAppscope, error) {
 	var body InputAppscope
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputAppscope overwrites any union data inside the Input as the provided InputAppscope
+// FromInputAppscope overwrites any Union data inside the Input as the provided InputAppscope
 func (t *Input) FromInputAppscope(v InputAppscope) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputAppscope performs a merge with any union data inside the Input, using the provided InputAppscope
+// MergeInputAppscope performs a merge with any Union data inside the Input, using the provided InputAppscope
 func (t *Input) MergeInputAppscope(v InputAppscope) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputWef returns the union data inside the Input as a InputWef
+// AsInputWef returns the Union data inside the Input as a InputWef
 func (t Input) AsInputWef() (InputWef, error) {
 	var body InputWef
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputWef overwrites any union data inside the Input as the provided InputWef
+// FromInputWef overwrites any Union data inside the Input as the provided InputWef
 func (t *Input) FromInputWef(v InputWef) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputWef performs a merge with any union data inside the Input, using the provided InputWef
+// MergeInputWef performs a merge with any Union data inside the Input, using the provided InputWef
 func (t *Input) MergeInputWef(v InputWef) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputWinEventLogs returns the union data inside the Input as a InputWinEventLogs
+// AsInputWinEventLogs returns the Union data inside the Input as a InputWinEventLogs
 func (t Input) AsInputWinEventLogs() (InputWinEventLogs, error) {
 	var body InputWinEventLogs
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputWinEventLogs overwrites any union data inside the Input as the provided InputWinEventLogs
+// FromInputWinEventLogs overwrites any Union data inside the Input as the provided InputWinEventLogs
 func (t *Input) FromInputWinEventLogs(v InputWinEventLogs) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputWinEventLogs performs a merge with any union data inside the Input, using the provided InputWinEventLogs
+// MergeInputWinEventLogs performs a merge with any Union data inside the Input, using the provided InputWinEventLogs
 func (t *Input) MergeInputWinEventLogs(v InputWinEventLogs) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputRawUdp returns the union data inside the Input as a InputRawUdp
+// AsInputRawUdp returns the Union data inside the Input as a InputRawUdp
 func (t Input) AsInputRawUdp() (InputRawUdp, error) {
 	var body InputRawUdp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputRawUdp overwrites any union data inside the Input as the provided InputRawUdp
+// FromInputRawUdp overwrites any Union data inside the Input as the provided InputRawUdp
 func (t *Input) FromInputRawUdp(v InputRawUdp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputRawUdp performs a merge with any union data inside the Input, using the provided InputRawUdp
+// MergeInputRawUdp performs a merge with any Union data inside the Input, using the provided InputRawUdp
 func (t *Input) MergeInputRawUdp(v InputRawUdp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputJournalFiles returns the union data inside the Input as a InputJournalFiles
+// AsInputJournalFiles returns the Union data inside the Input as a InputJournalFiles
 func (t Input) AsInputJournalFiles() (InputJournalFiles, error) {
 	var body InputJournalFiles
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputJournalFiles overwrites any union data inside the Input as the provided InputJournalFiles
+// FromInputJournalFiles overwrites any Union data inside the Input as the provided InputJournalFiles
 func (t *Input) FromInputJournalFiles(v InputJournalFiles) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputJournalFiles performs a merge with any union data inside the Input, using the provided InputJournalFiles
+// MergeInputJournalFiles performs a merge with any Union data inside the Input, using the provided InputJournalFiles
 func (t *Input) MergeInputJournalFiles(v InputJournalFiles) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputWiz returns the union data inside the Input as a InputWiz
+// AsInputWiz returns the Union data inside the Input as a InputWiz
 func (t Input) AsInputWiz() (InputWiz, error) {
 	var body InputWiz
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputWiz overwrites any union data inside the Input as the provided InputWiz
+// FromInputWiz overwrites any Union data inside the Input as the provided InputWiz
 func (t *Input) FromInputWiz(v InputWiz) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputWiz performs a merge with any union data inside the Input, using the provided InputWiz
+// MergeInputWiz performs a merge with any Union data inside the Input, using the provided InputWiz
 func (t *Input) MergeInputWiz(v InputWiz) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputNetflow returns the union data inside the Input as a InputNetflow
+// AsInputNetflow returns the Union data inside the Input as a InputNetflow
 func (t Input) AsInputNetflow() (InputNetflow, error) {
 	var body InputNetflow
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputNetflow overwrites any union data inside the Input as the provided InputNetflow
+// FromInputNetflow overwrites any Union data inside the Input as the provided InputNetflow
 func (t *Input) FromInputNetflow(v InputNetflow) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputNetflow performs a merge with any union data inside the Input, using the provided InputNetflow
+// MergeInputNetflow performs a merge with any Union data inside the Input, using the provided InputNetflow
 func (t *Input) MergeInputNetflow(v InputNetflow) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSecurityLake returns the union data inside the Input as a InputSecurityLake
+// AsInputSecurityLake returns the Union data inside the Input as a InputSecurityLake
 func (t Input) AsInputSecurityLake() (InputSecurityLake, error) {
 	var body InputSecurityLake
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSecurityLake overwrites any union data inside the Input as the provided InputSecurityLake
+// FromInputSecurityLake overwrites any Union data inside the Input as the provided InputSecurityLake
 func (t *Input) FromInputSecurityLake(v InputSecurityLake) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSecurityLake performs a merge with any union data inside the Input, using the provided InputSecurityLake
+// MergeInputSecurityLake performs a merge with any Union data inside the Input, using the provided InputSecurityLake
 func (t *Input) MergeInputSecurityLake(v InputSecurityLake) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputZscalerHec returns the union data inside the Input as a InputZscalerHec
+// AsInputZscalerHec returns the Union data inside the Input as a InputZscalerHec
 func (t Input) AsInputZscalerHec() (InputZscalerHec, error) {
 	var body InputZscalerHec
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputZscalerHec overwrites any union data inside the Input as the provided InputZscalerHec
+// FromInputZscalerHec overwrites any Union data inside the Input as the provided InputZscalerHec
 func (t *Input) FromInputZscalerHec(v InputZscalerHec) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputZscalerHec performs a merge with any union data inside the Input, using the provided InputZscalerHec
+// MergeInputZscalerHec performs a merge with any Union data inside the Input, using the provided InputZscalerHec
 func (t *Input) MergeInputZscalerHec(v InputZscalerHec) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t Input) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *Input) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsInputGrafana0 returns the union data inside the InputGrafana as a InputGrafana0
+// AsInputGrafana0 returns the Union data inside the InputGrafana as a InputGrafana0
 func (t InputGrafana) AsInputGrafana0() (InputGrafana0, error) {
 	var body InputGrafana0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputGrafana0 overwrites any union data inside the InputGrafana as the provided InputGrafana0
+// FromInputGrafana0 overwrites any Union data inside the InputGrafana as the provided InputGrafana0
 func (t *InputGrafana) FromInputGrafana0(v InputGrafana0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputGrafana0 performs a merge with any union data inside the InputGrafana, using the provided InputGrafana0
+// MergeInputGrafana0 performs a merge with any Union data inside the InputGrafana, using the provided InputGrafana0
 func (t *InputGrafana) MergeInputGrafana0(v InputGrafana0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputGrafana1 returns the union data inside the InputGrafana as a InputGrafana1
+// AsInputGrafana1 returns the Union data inside the InputGrafana as a InputGrafana1
 func (t InputGrafana) AsInputGrafana1() (InputGrafana1, error) {
 	var body InputGrafana1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputGrafana1 overwrites any union data inside the InputGrafana as the provided InputGrafana1
+// FromInputGrafana1 overwrites any Union data inside the InputGrafana as the provided InputGrafana1
 func (t *InputGrafana) FromInputGrafana1(v InputGrafana1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputGrafana1 performs a merge with any union data inside the InputGrafana, using the provided InputGrafana1
+// MergeInputGrafana1 performs a merge with any Union data inside the InputGrafana, using the provided InputGrafana1
 func (t *InputGrafana) MergeInputGrafana1(v InputGrafana1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t InputGrafana) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	if err != nil {
 		return nil, err
 	}
 	object := make(map[string]json.RawMessage)
-	if t.union != nil {
+	if t.Union != nil {
 		err = json.Unmarshal(b, &object)
 		if err != nil {
 			return nil, err
@@ -36234,7 +36234,7 @@ func (t InputGrafana) MarshalJSON() ([]byte, error) {
 }
 
 func (t *InputGrafana) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	if err != nil {
 		return err
 	}
@@ -36457,65 +36457,65 @@ func (t *InputGrafana) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsInputSyslog0 returns the union data inside the InputSyslog as a InputSyslog0
+// AsInputSyslog0 returns the Union data inside the InputSyslog as a InputSyslog0
 func (t InputSyslog) AsInputSyslog0() (InputSyslog0, error) {
 	var body InputSyslog0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSyslog0 overwrites any union data inside the InputSyslog as the provided InputSyslog0
+// FromInputSyslog0 overwrites any Union data inside the InputSyslog as the provided InputSyslog0
 func (t *InputSyslog) FromInputSyslog0(v InputSyslog0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSyslog0 performs a merge with any union data inside the InputSyslog, using the provided InputSyslog0
+// MergeInputSyslog0 performs a merge with any Union data inside the InputSyslog, using the provided InputSyslog0
 func (t *InputSyslog) MergeInputSyslog0(v InputSyslog0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsInputSyslog1 returns the union data inside the InputSyslog as a InputSyslog1
+// AsInputSyslog1 returns the Union data inside the InputSyslog as a InputSyslog1
 func (t InputSyslog) AsInputSyslog1() (InputSyslog1, error) {
 	var body InputSyslog1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromInputSyslog1 overwrites any union data inside the InputSyslog as the provided InputSyslog1
+// FromInputSyslog1 overwrites any Union data inside the InputSyslog as the provided InputSyslog1
 func (t *InputSyslog) FromInputSyslog1(v InputSyslog1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeInputSyslog1 performs a merge with any union data inside the InputSyslog, using the provided InputSyslog1
+// MergeInputSyslog1 performs a merge with any Union data inside the InputSyslog, using the provided InputSyslog1
 func (t *InputSyslog) MergeInputSyslog1(v InputSyslog1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t InputSyslog) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	if err != nil {
 		return nil, err
 	}
 	object := make(map[string]json.RawMessage)
-	if t.union != nil {
+	if t.Union != nil {
 		err = json.Unmarshal(b, &object)
 		if err != nil {
 			return nil, err
@@ -36746,7 +36746,7 @@ func (t InputSyslog) MarshalJSON() ([]byte, error) {
 }
 
 func (t *InputSyslog) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	if err != nil {
 		return err
 	}
@@ -36983,127 +36983,127 @@ func (t *InputSyslog) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsKMSProviderConfigAuth0 returns the union data inside the KMSProviderConfig_Auth as a KMSProviderConfigAuth0
+// AsKMSProviderConfigAuth0 returns the Union data inside the KMSProviderConfig_Auth as a KMSProviderConfigAuth0
 func (t KMSProviderConfig_Auth) AsKMSProviderConfigAuth0() (KMSProviderConfigAuth0, error) {
 	var body KMSProviderConfigAuth0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromKMSProviderConfigAuth0 overwrites any union data inside the KMSProviderConfig_Auth as the provided KMSProviderConfigAuth0
+// FromKMSProviderConfigAuth0 overwrites any Union data inside the KMSProviderConfig_Auth as the provided KMSProviderConfigAuth0
 func (t *KMSProviderConfig_Auth) FromKMSProviderConfigAuth0(v KMSProviderConfigAuth0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeKMSProviderConfigAuth0 performs a merge with any union data inside the KMSProviderConfig_Auth, using the provided KMSProviderConfigAuth0
+// MergeKMSProviderConfigAuth0 performs a merge with any Union data inside the KMSProviderConfig_Auth, using the provided KMSProviderConfigAuth0
 func (t *KMSProviderConfig_Auth) MergeKMSProviderConfigAuth0(v KMSProviderConfigAuth0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsKMSProviderConfigAuth1 returns the union data inside the KMSProviderConfig_Auth as a KMSProviderConfigAuth1
+// AsKMSProviderConfigAuth1 returns the Union data inside the KMSProviderConfig_Auth as a KMSProviderConfigAuth1
 func (t KMSProviderConfig_Auth) AsKMSProviderConfigAuth1() (KMSProviderConfigAuth1, error) {
 	var body KMSProviderConfigAuth1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromKMSProviderConfigAuth1 overwrites any union data inside the KMSProviderConfig_Auth as the provided KMSProviderConfigAuth1
+// FromKMSProviderConfigAuth1 overwrites any Union data inside the KMSProviderConfig_Auth as the provided KMSProviderConfigAuth1
 func (t *KMSProviderConfig_Auth) FromKMSProviderConfigAuth1(v KMSProviderConfigAuth1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeKMSProviderConfigAuth1 performs a merge with any union data inside the KMSProviderConfig_Auth, using the provided KMSProviderConfigAuth1
+// MergeKMSProviderConfigAuth1 performs a merge with any Union data inside the KMSProviderConfig_Auth, using the provided KMSProviderConfigAuth1
 func (t *KMSProviderConfig_Auth) MergeKMSProviderConfigAuth1(v KMSProviderConfigAuth1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t KMSProviderConfig_Auth) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *KMSProviderConfig_Auth) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsLookupFile0 returns the union data inside the LookupFile as a LookupFile0
+// AsLookupFile0 returns the Union data inside the LookupFile as a LookupFile0
 func (t LookupFile) AsLookupFile0() (LookupFile0, error) {
 	var body LookupFile0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromLookupFile0 overwrites any union data inside the LookupFile as the provided LookupFile0
+// FromLookupFile0 overwrites any Union data inside the LookupFile as the provided LookupFile0
 func (t *LookupFile) FromLookupFile0(v LookupFile0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeLookupFile0 performs a merge with any union data inside the LookupFile, using the provided LookupFile0
+// MergeLookupFile0 performs a merge with any Union data inside the LookupFile, using the provided LookupFile0
 func (t *LookupFile) MergeLookupFile0(v LookupFile0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsLookupFile1 returns the union data inside the LookupFile as a LookupFile1
+// AsLookupFile1 returns the Union data inside the LookupFile as a LookupFile1
 func (t LookupFile) AsLookupFile1() (LookupFile1, error) {
 	var body LookupFile1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromLookupFile1 overwrites any union data inside the LookupFile as the provided LookupFile1
+// FromLookupFile1 overwrites any Union data inside the LookupFile as the provided LookupFile1
 func (t *LookupFile) FromLookupFile1(v LookupFile1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeLookupFile1 performs a merge with any union data inside the LookupFile, using the provided LookupFile1
+// MergeLookupFile1 performs a merge with any Union data inside the LookupFile, using the provided LookupFile1
 func (t *LookupFile) MergeLookupFile1(v LookupFile1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t LookupFile) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	if err != nil {
 		return nil, err
 	}
 	object := make(map[string]json.RawMessage)
-	if t.union != nil {
+	if t.Union != nil {
 		err = json.Unmarshal(b, &object)
 		if err != nil {
 			return nil, err
@@ -37140,7 +37140,7 @@ func (t LookupFile) MarshalJSON() ([]byte, error) {
 }
 
 func (t *LookupFile) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	if err != nil {
 		return err
 	}
@@ -37181,261 +37181,261 @@ func (t *LookupFile) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsMaxConcurrentSearchesType0 returns the union data inside the MaxConcurrentSearchesType as a MaxConcurrentSearchesType0
+// AsMaxConcurrentSearchesType0 returns the Union data inside the MaxConcurrentSearchesType as a MaxConcurrentSearchesType0
 func (t MaxConcurrentSearchesType) AsMaxConcurrentSearchesType0() (MaxConcurrentSearchesType0, error) {
 	var body MaxConcurrentSearchesType0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromMaxConcurrentSearchesType0 overwrites any union data inside the MaxConcurrentSearchesType as the provided MaxConcurrentSearchesType0
+// FromMaxConcurrentSearchesType0 overwrites any Union data inside the MaxConcurrentSearchesType as the provided MaxConcurrentSearchesType0
 func (t *MaxConcurrentSearchesType) FromMaxConcurrentSearchesType0(v MaxConcurrentSearchesType0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeMaxConcurrentSearchesType0 performs a merge with any union data inside the MaxConcurrentSearchesType, using the provided MaxConcurrentSearchesType0
+// MergeMaxConcurrentSearchesType0 performs a merge with any Union data inside the MaxConcurrentSearchesType, using the provided MaxConcurrentSearchesType0
 func (t *MaxConcurrentSearchesType) MergeMaxConcurrentSearchesType0(v MaxConcurrentSearchesType0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t MaxConcurrentSearchesType) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *MaxConcurrentSearchesType) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsMetricsAggOptsEarliest0 returns the union data inside the MetricsAggOpts_Earliest as a MetricsAggOptsEarliest0
+// AsMetricsAggOptsEarliest0 returns the Union data inside the MetricsAggOpts_Earliest as a MetricsAggOptsEarliest0
 func (t MetricsAggOpts_Earliest) AsMetricsAggOptsEarliest0() (MetricsAggOptsEarliest0, error) {
 	var body MetricsAggOptsEarliest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromMetricsAggOptsEarliest0 overwrites any union data inside the MetricsAggOpts_Earliest as the provided MetricsAggOptsEarliest0
+// FromMetricsAggOptsEarliest0 overwrites any Union data inside the MetricsAggOpts_Earliest as the provided MetricsAggOptsEarliest0
 func (t *MetricsAggOpts_Earliest) FromMetricsAggOptsEarliest0(v MetricsAggOptsEarliest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeMetricsAggOptsEarliest0 performs a merge with any union data inside the MetricsAggOpts_Earliest, using the provided MetricsAggOptsEarliest0
+// MergeMetricsAggOptsEarliest0 performs a merge with any Union data inside the MetricsAggOpts_Earliest, using the provided MetricsAggOptsEarliest0
 func (t *MetricsAggOpts_Earliest) MergeMetricsAggOptsEarliest0(v MetricsAggOptsEarliest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsMetricsAggOptsEarliest1 returns the union data inside the MetricsAggOpts_Earliest as a MetricsAggOptsEarliest1
+// AsMetricsAggOptsEarliest1 returns the Union data inside the MetricsAggOpts_Earliest as a MetricsAggOptsEarliest1
 func (t MetricsAggOpts_Earliest) AsMetricsAggOptsEarliest1() (MetricsAggOptsEarliest1, error) {
 	var body MetricsAggOptsEarliest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromMetricsAggOptsEarliest1 overwrites any union data inside the MetricsAggOpts_Earliest as the provided MetricsAggOptsEarliest1
+// FromMetricsAggOptsEarliest1 overwrites any Union data inside the MetricsAggOpts_Earliest as the provided MetricsAggOptsEarliest1
 func (t *MetricsAggOpts_Earliest) FromMetricsAggOptsEarliest1(v MetricsAggOptsEarliest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeMetricsAggOptsEarliest1 performs a merge with any union data inside the MetricsAggOpts_Earliest, using the provided MetricsAggOptsEarliest1
+// MergeMetricsAggOptsEarliest1 performs a merge with any Union data inside the MetricsAggOpts_Earliest, using the provided MetricsAggOptsEarliest1
 func (t *MetricsAggOpts_Earliest) MergeMetricsAggOptsEarliest1(v MetricsAggOptsEarliest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t MetricsAggOpts_Earliest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *MetricsAggOpts_Earliest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsMetricsAggOptsLatest0 returns the union data inside the MetricsAggOpts_Latest as a MetricsAggOptsLatest0
+// AsMetricsAggOptsLatest0 returns the Union data inside the MetricsAggOpts_Latest as a MetricsAggOptsLatest0
 func (t MetricsAggOpts_Latest) AsMetricsAggOptsLatest0() (MetricsAggOptsLatest0, error) {
 	var body MetricsAggOptsLatest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromMetricsAggOptsLatest0 overwrites any union data inside the MetricsAggOpts_Latest as the provided MetricsAggOptsLatest0
+// FromMetricsAggOptsLatest0 overwrites any Union data inside the MetricsAggOpts_Latest as the provided MetricsAggOptsLatest0
 func (t *MetricsAggOpts_Latest) FromMetricsAggOptsLatest0(v MetricsAggOptsLatest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeMetricsAggOptsLatest0 performs a merge with any union data inside the MetricsAggOpts_Latest, using the provided MetricsAggOptsLatest0
+// MergeMetricsAggOptsLatest0 performs a merge with any Union data inside the MetricsAggOpts_Latest, using the provided MetricsAggOptsLatest0
 func (t *MetricsAggOpts_Latest) MergeMetricsAggOptsLatest0(v MetricsAggOptsLatest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsMetricsAggOptsLatest1 returns the union data inside the MetricsAggOpts_Latest as a MetricsAggOptsLatest1
+// AsMetricsAggOptsLatest1 returns the Union data inside the MetricsAggOpts_Latest as a MetricsAggOptsLatest1
 func (t MetricsAggOpts_Latest) AsMetricsAggOptsLatest1() (MetricsAggOptsLatest1, error) {
 	var body MetricsAggOptsLatest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromMetricsAggOptsLatest1 overwrites any union data inside the MetricsAggOpts_Latest as the provided MetricsAggOptsLatest1
+// FromMetricsAggOptsLatest1 overwrites any Union data inside the MetricsAggOpts_Latest as the provided MetricsAggOptsLatest1
 func (t *MetricsAggOpts_Latest) FromMetricsAggOptsLatest1(v MetricsAggOptsLatest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeMetricsAggOptsLatest1 performs a merge with any union data inside the MetricsAggOpts_Latest, using the provided MetricsAggOptsLatest1
+// MergeMetricsAggOptsLatest1 performs a merge with any Union data inside the MetricsAggOpts_Latest, using the provided MetricsAggOptsLatest1
 func (t *MetricsAggOpts_Latest) MergeMetricsAggOptsLatest1(v MetricsAggOptsLatest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t MetricsAggOpts_Latest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *MetricsAggOpts_Latest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsNodeProvidedInfoOs0 returns the union data inside the NodeProvidedInfo_Os as a NodeProvidedInfoOs0
+// AsNodeProvidedInfoOs0 returns the Union data inside the NodeProvidedInfo_Os as a NodeProvidedInfoOs0
 func (t NodeProvidedInfo_Os) AsNodeProvidedInfoOs0() (NodeProvidedInfoOs0, error) {
 	var body NodeProvidedInfoOs0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromNodeProvidedInfoOs0 overwrites any union data inside the NodeProvidedInfo_Os as the provided NodeProvidedInfoOs0
+// FromNodeProvidedInfoOs0 overwrites any Union data inside the NodeProvidedInfo_Os as the provided NodeProvidedInfoOs0
 func (t *NodeProvidedInfo_Os) FromNodeProvidedInfoOs0(v NodeProvidedInfoOs0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeNodeProvidedInfoOs0 performs a merge with any union data inside the NodeProvidedInfo_Os, using the provided NodeProvidedInfoOs0
+// MergeNodeProvidedInfoOs0 performs a merge with any Union data inside the NodeProvidedInfo_Os, using the provided NodeProvidedInfoOs0
 func (t *NodeProvidedInfo_Os) MergeNodeProvidedInfoOs0(v NodeProvidedInfoOs0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsNodeProvidedInfoOs1 returns the union data inside the NodeProvidedInfo_Os as a NodeProvidedInfoOs1
+// AsNodeProvidedInfoOs1 returns the Union data inside the NodeProvidedInfo_Os as a NodeProvidedInfoOs1
 func (t NodeProvidedInfo_Os) AsNodeProvidedInfoOs1() (NodeProvidedInfoOs1, error) {
 	var body NodeProvidedInfoOs1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromNodeProvidedInfoOs1 overwrites any union data inside the NodeProvidedInfo_Os as the provided NodeProvidedInfoOs1
+// FromNodeProvidedInfoOs1 overwrites any Union data inside the NodeProvidedInfo_Os as the provided NodeProvidedInfoOs1
 func (t *NodeProvidedInfo_Os) FromNodeProvidedInfoOs1(v NodeProvidedInfoOs1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeNodeProvidedInfoOs1 performs a merge with any union data inside the NodeProvidedInfo_Os, using the provided NodeProvidedInfoOs1
+// MergeNodeProvidedInfoOs1 performs a merge with any Union data inside the NodeProvidedInfo_Os, using the provided NodeProvidedInfoOs1
 func (t *NodeProvidedInfo_Os) MergeNodeProvidedInfoOs1(v NodeProvidedInfoOs1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t NodeProvidedInfo_Os) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *NodeProvidedInfo_Os) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsNotificationTargetConfigs0 returns the union data inside the Notification_TargetConfigs_Item as a NotificationTargetConfigs0
+// AsNotificationTargetConfigs0 returns the Union data inside the Notification_TargetConfigs_Item as a NotificationTargetConfigs0
 func (t Notification_TargetConfigs_Item) AsNotificationTargetConfigs0() (NotificationTargetConfigs0, error) {
 	var body NotificationTargetConfigs0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromNotificationTargetConfigs0 overwrites any union data inside the Notification_TargetConfigs_Item as the provided NotificationTargetConfigs0
+// FromNotificationTargetConfigs0 overwrites any Union data inside the Notification_TargetConfigs_Item as the provided NotificationTargetConfigs0
 func (t *Notification_TargetConfigs_Item) FromNotificationTargetConfigs0(v NotificationTargetConfigs0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeNotificationTargetConfigs0 performs a merge with any union data inside the Notification_TargetConfigs_Item, using the provided NotificationTargetConfigs0
+// MergeNotificationTargetConfigs0 performs a merge with any Union data inside the Notification_TargetConfigs_Item, using the provided NotificationTargetConfigs0
 func (t *Notification_TargetConfigs_Item) MergeNotificationTargetConfigs0(v NotificationTargetConfigs0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t Notification_TargetConfigs_Item) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	if err != nil {
 		return nil, err
 	}
 	object := make(map[string]json.RawMessage)
-	if t.union != nil {
+	if t.Union != nil {
 		err = json.Unmarshal(b, &object)
 		if err != nil {
 			return nil, err
@@ -37452,7 +37452,7 @@ func (t Notification_TargetConfigs_Item) MarshalJSON() ([]byte, error) {
 }
 
 func (t *Notification_TargetConfigs_Item) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	if err != nil {
 		return err
 	}
@@ -37472,1687 +37472,1687 @@ func (t *Notification_TargetConfigs_Item) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsOutputDefault returns the union data inside the Output as a OutputDefault
+// AsOutputDefault returns the Union data inside the Output as a OutputDefault
 func (t Output) AsOutputDefault() (OutputDefault, error) {
 	var body OutputDefault
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDefault overwrites any union data inside the Output as the provided OutputDefault
+// FromOutputDefault overwrites any Union data inside the Output as the provided OutputDefault
 func (t *Output) FromOutputDefault(v OutputDefault) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDefault performs a merge with any union data inside the Output, using the provided OutputDefault
+// MergeOutputDefault performs a merge with any Union data inside the Output, using the provided OutputDefault
 func (t *Output) MergeOutputDefault(v OutputDefault) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputWebhook returns the union data inside the Output as a OutputWebhook
+// AsOutputWebhook returns the Union data inside the Output as a OutputWebhook
 func (t Output) AsOutputWebhook() (OutputWebhook, error) {
 	var body OutputWebhook
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputWebhook overwrites any union data inside the Output as the provided OutputWebhook
+// FromOutputWebhook overwrites any Union data inside the Output as the provided OutputWebhook
 func (t *Output) FromOutputWebhook(v OutputWebhook) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputWebhook performs a merge with any union data inside the Output, using the provided OutputWebhook
+// MergeOutputWebhook performs a merge with any Union data inside the Output, using the provided OutputWebhook
 func (t *Output) MergeOutputWebhook(v OutputWebhook) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSentinel returns the union data inside the Output as a OutputSentinel
+// AsOutputSentinel returns the Union data inside the Output as a OutputSentinel
 func (t Output) AsOutputSentinel() (OutputSentinel, error) {
 	var body OutputSentinel
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSentinel overwrites any union data inside the Output as the provided OutputSentinel
+// FromOutputSentinel overwrites any Union data inside the Output as the provided OutputSentinel
 func (t *Output) FromOutputSentinel(v OutputSentinel) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSentinel performs a merge with any union data inside the Output, using the provided OutputSentinel
+// MergeOutputSentinel performs a merge with any Union data inside the Output, using the provided OutputSentinel
 func (t *Output) MergeOutputSentinel(v OutputSentinel) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDevnull returns the union data inside the Output as a OutputDevnull
+// AsOutputDevnull returns the Union data inside the Output as a OutputDevnull
 func (t Output) AsOutputDevnull() (OutputDevnull, error) {
 	var body OutputDevnull
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDevnull overwrites any union data inside the Output as the provided OutputDevnull
+// FromOutputDevnull overwrites any Union data inside the Output as the provided OutputDevnull
 func (t *Output) FromOutputDevnull(v OutputDevnull) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDevnull performs a merge with any union data inside the Output, using the provided OutputDevnull
+// MergeOutputDevnull performs a merge with any Union data inside the Output, using the provided OutputDevnull
 func (t *Output) MergeOutputDevnull(v OutputDevnull) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSyslog returns the union data inside the Output as a OutputSyslog
+// AsOutputSyslog returns the Union data inside the Output as a OutputSyslog
 func (t Output) AsOutputSyslog() (OutputSyslog, error) {
 	var body OutputSyslog
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSyslog overwrites any union data inside the Output as the provided OutputSyslog
+// FromOutputSyslog overwrites any Union data inside the Output as the provided OutputSyslog
 func (t *Output) FromOutputSyslog(v OutputSyslog) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSyslog performs a merge with any union data inside the Output, using the provided OutputSyslog
+// MergeOutputSyslog performs a merge with any Union data inside the Output, using the provided OutputSyslog
 func (t *Output) MergeOutputSyslog(v OutputSyslog) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSplunk returns the union data inside the Output as a OutputSplunk
+// AsOutputSplunk returns the Union data inside the Output as a OutputSplunk
 func (t Output) AsOutputSplunk() (OutputSplunk, error) {
 	var body OutputSplunk
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSplunk overwrites any union data inside the Output as the provided OutputSplunk
+// FromOutputSplunk overwrites any Union data inside the Output as the provided OutputSplunk
 func (t *Output) FromOutputSplunk(v OutputSplunk) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSplunk performs a merge with any union data inside the Output, using the provided OutputSplunk
+// MergeOutputSplunk performs a merge with any Union data inside the Output, using the provided OutputSplunk
 func (t *Output) MergeOutputSplunk(v OutputSplunk) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSplunkLb returns the union data inside the Output as a OutputSplunkLb
+// AsOutputSplunkLb returns the Union data inside the Output as a OutputSplunkLb
 func (t Output) AsOutputSplunkLb() (OutputSplunkLb, error) {
 	var body OutputSplunkLb
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSplunkLb overwrites any union data inside the Output as the provided OutputSplunkLb
+// FromOutputSplunkLb overwrites any Union data inside the Output as the provided OutputSplunkLb
 func (t *Output) FromOutputSplunkLb(v OutputSplunkLb) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSplunkLb performs a merge with any union data inside the Output, using the provided OutputSplunkLb
+// MergeOutputSplunkLb performs a merge with any Union data inside the Output, using the provided OutputSplunkLb
 func (t *Output) MergeOutputSplunkLb(v OutputSplunkLb) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSplunkHec returns the union data inside the Output as a OutputSplunkHec
+// AsOutputSplunkHec returns the Union data inside the Output as a OutputSplunkHec
 func (t Output) AsOutputSplunkHec() (OutputSplunkHec, error) {
 	var body OutputSplunkHec
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSplunkHec overwrites any union data inside the Output as the provided OutputSplunkHec
+// FromOutputSplunkHec overwrites any Union data inside the Output as the provided OutputSplunkHec
 func (t *Output) FromOutputSplunkHec(v OutputSplunkHec) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSplunkHec performs a merge with any union data inside the Output, using the provided OutputSplunkHec
+// MergeOutputSplunkHec performs a merge with any Union data inside the Output, using the provided OutputSplunkHec
 func (t *Output) MergeOutputSplunkHec(v OutputSplunkHec) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputTcpjson returns the union data inside the Output as a OutputTcpjson
+// AsOutputTcpjson returns the Union data inside the Output as a OutputTcpjson
 func (t Output) AsOutputTcpjson() (OutputTcpjson, error) {
 	var body OutputTcpjson
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputTcpjson overwrites any union data inside the Output as the provided OutputTcpjson
+// FromOutputTcpjson overwrites any Union data inside the Output as the provided OutputTcpjson
 func (t *Output) FromOutputTcpjson(v OutputTcpjson) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputTcpjson performs a merge with any union data inside the Output, using the provided OutputTcpjson
+// MergeOutputTcpjson performs a merge with any Union data inside the Output, using the provided OutputTcpjson
 func (t *Output) MergeOutputTcpjson(v OutputTcpjson) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputWavefront returns the union data inside the Output as a OutputWavefront
+// AsOutputWavefront returns the Union data inside the Output as a OutputWavefront
 func (t Output) AsOutputWavefront() (OutputWavefront, error) {
 	var body OutputWavefront
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputWavefront overwrites any union data inside the Output as the provided OutputWavefront
+// FromOutputWavefront overwrites any Union data inside the Output as the provided OutputWavefront
 func (t *Output) FromOutputWavefront(v OutputWavefront) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputWavefront performs a merge with any union data inside the Output, using the provided OutputWavefront
+// MergeOutputWavefront performs a merge with any Union data inside the Output, using the provided OutputWavefront
 func (t *Output) MergeOutputWavefront(v OutputWavefront) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSignalfx returns the union data inside the Output as a OutputSignalfx
+// AsOutputSignalfx returns the Union data inside the Output as a OutputSignalfx
 func (t Output) AsOutputSignalfx() (OutputSignalfx, error) {
 	var body OutputSignalfx
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSignalfx overwrites any union data inside the Output as the provided OutputSignalfx
+// FromOutputSignalfx overwrites any Union data inside the Output as the provided OutputSignalfx
 func (t *Output) FromOutputSignalfx(v OutputSignalfx) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSignalfx performs a merge with any union data inside the Output, using the provided OutputSignalfx
+// MergeOutputSignalfx performs a merge with any Union data inside the Output, using the provided OutputSignalfx
 func (t *Output) MergeOutputSignalfx(v OutputSignalfx) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputFilesystem returns the union data inside the Output as a OutputFilesystem
+// AsOutputFilesystem returns the Union data inside the Output as a OutputFilesystem
 func (t Output) AsOutputFilesystem() (OutputFilesystem, error) {
 	var body OutputFilesystem
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputFilesystem overwrites any union data inside the Output as the provided OutputFilesystem
+// FromOutputFilesystem overwrites any Union data inside the Output as the provided OutputFilesystem
 func (t *Output) FromOutputFilesystem(v OutputFilesystem) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputFilesystem performs a merge with any union data inside the Output, using the provided OutputFilesystem
+// MergeOutputFilesystem performs a merge with any Union data inside the Output, using the provided OutputFilesystem
 func (t *Output) MergeOutputFilesystem(v OutputFilesystem) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputS3 returns the union data inside the Output as a OutputS3
+// AsOutputS3 returns the Union data inside the Output as a OutputS3
 func (t Output) AsOutputS3() (OutputS3, error) {
 	var body OutputS3
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputS3 overwrites any union data inside the Output as the provided OutputS3
+// FromOutputS3 overwrites any Union data inside the Output as the provided OutputS3
 func (t *Output) FromOutputS3(v OutputS3) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputS3 performs a merge with any union data inside the Output, using the provided OutputS3
+// MergeOutputS3 performs a merge with any Union data inside the Output, using the provided OutputS3
 func (t *Output) MergeOutputS3(v OutputS3) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputAzureBlob returns the union data inside the Output as a OutputAzureBlob
+// AsOutputAzureBlob returns the Union data inside the Output as a OutputAzureBlob
 func (t Output) AsOutputAzureBlob() (OutputAzureBlob, error) {
 	var body OutputAzureBlob
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputAzureBlob overwrites any union data inside the Output as the provided OutputAzureBlob
+// FromOutputAzureBlob overwrites any Union data inside the Output as the provided OutputAzureBlob
 func (t *Output) FromOutputAzureBlob(v OutputAzureBlob) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputAzureBlob performs a merge with any union data inside the Output, using the provided OutputAzureBlob
+// MergeOutputAzureBlob performs a merge with any Union data inside the Output, using the provided OutputAzureBlob
 func (t *Output) MergeOutputAzureBlob(v OutputAzureBlob) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputAzureDataExplorer returns the union data inside the Output as a OutputAzureDataExplorer
+// AsOutputAzureDataExplorer returns the Union data inside the Output as a OutputAzureDataExplorer
 func (t Output) AsOutputAzureDataExplorer() (OutputAzureDataExplorer, error) {
 	var body OutputAzureDataExplorer
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputAzureDataExplorer overwrites any union data inside the Output as the provided OutputAzureDataExplorer
+// FromOutputAzureDataExplorer overwrites any Union data inside the Output as the provided OutputAzureDataExplorer
 func (t *Output) FromOutputAzureDataExplorer(v OutputAzureDataExplorer) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputAzureDataExplorer performs a merge with any union data inside the Output, using the provided OutputAzureDataExplorer
+// MergeOutputAzureDataExplorer performs a merge with any Union data inside the Output, using the provided OutputAzureDataExplorer
 func (t *Output) MergeOutputAzureDataExplorer(v OutputAzureDataExplorer) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputAzureLogs returns the union data inside the Output as a OutputAzureLogs
+// AsOutputAzureLogs returns the Union data inside the Output as a OutputAzureLogs
 func (t Output) AsOutputAzureLogs() (OutputAzureLogs, error) {
 	var body OutputAzureLogs
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputAzureLogs overwrites any union data inside the Output as the provided OutputAzureLogs
+// FromOutputAzureLogs overwrites any Union data inside the Output as the provided OutputAzureLogs
 func (t *Output) FromOutputAzureLogs(v OutputAzureLogs) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputAzureLogs performs a merge with any union data inside the Output, using the provided OutputAzureLogs
+// MergeOutputAzureLogs performs a merge with any Union data inside the Output, using the provided OutputAzureLogs
 func (t *Output) MergeOutputAzureLogs(v OutputAzureLogs) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputKinesis returns the union data inside the Output as a OutputKinesis
+// AsOutputKinesis returns the Union data inside the Output as a OutputKinesis
 func (t Output) AsOutputKinesis() (OutputKinesis, error) {
 	var body OutputKinesis
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputKinesis overwrites any union data inside the Output as the provided OutputKinesis
+// FromOutputKinesis overwrites any Union data inside the Output as the provided OutputKinesis
 func (t *Output) FromOutputKinesis(v OutputKinesis) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputKinesis performs a merge with any union data inside the Output, using the provided OutputKinesis
+// MergeOutputKinesis performs a merge with any Union data inside the Output, using the provided OutputKinesis
 func (t *Output) MergeOutputKinesis(v OutputKinesis) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputHoneycomb returns the union data inside the Output as a OutputHoneycomb
+// AsOutputHoneycomb returns the Union data inside the Output as a OutputHoneycomb
 func (t Output) AsOutputHoneycomb() (OutputHoneycomb, error) {
 	var body OutputHoneycomb
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputHoneycomb overwrites any union data inside the Output as the provided OutputHoneycomb
+// FromOutputHoneycomb overwrites any Union data inside the Output as the provided OutputHoneycomb
 func (t *Output) FromOutputHoneycomb(v OutputHoneycomb) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputHoneycomb performs a merge with any union data inside the Output, using the provided OutputHoneycomb
+// MergeOutputHoneycomb performs a merge with any Union data inside the Output, using the provided OutputHoneycomb
 func (t *Output) MergeOutputHoneycomb(v OutputHoneycomb) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputAzureEventhub returns the union data inside the Output as a OutputAzureEventhub
+// AsOutputAzureEventhub returns the Union data inside the Output as a OutputAzureEventhub
 func (t Output) AsOutputAzureEventhub() (OutputAzureEventhub, error) {
 	var body OutputAzureEventhub
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputAzureEventhub overwrites any union data inside the Output as the provided OutputAzureEventhub
+// FromOutputAzureEventhub overwrites any Union data inside the Output as the provided OutputAzureEventhub
 func (t *Output) FromOutputAzureEventhub(v OutputAzureEventhub) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputAzureEventhub performs a merge with any union data inside the Output, using the provided OutputAzureEventhub
+// MergeOutputAzureEventhub performs a merge with any Union data inside the Output, using the provided OutputAzureEventhub
 func (t *Output) MergeOutputAzureEventhub(v OutputAzureEventhub) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGoogleChronicle returns the union data inside the Output as a OutputGoogleChronicle
+// AsOutputGoogleChronicle returns the Union data inside the Output as a OutputGoogleChronicle
 func (t Output) AsOutputGoogleChronicle() (OutputGoogleChronicle, error) {
 	var body OutputGoogleChronicle
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGoogleChronicle overwrites any union data inside the Output as the provided OutputGoogleChronicle
+// FromOutputGoogleChronicle overwrites any Union data inside the Output as the provided OutputGoogleChronicle
 func (t *Output) FromOutputGoogleChronicle(v OutputGoogleChronicle) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGoogleChronicle performs a merge with any union data inside the Output, using the provided OutputGoogleChronicle
+// MergeOutputGoogleChronicle performs a merge with any Union data inside the Output, using the provided OutputGoogleChronicle
 func (t *Output) MergeOutputGoogleChronicle(v OutputGoogleChronicle) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGoogleCloudStorage returns the union data inside the Output as a OutputGoogleCloudStorage
+// AsOutputGoogleCloudStorage returns the Union data inside the Output as a OutputGoogleCloudStorage
 func (t Output) AsOutputGoogleCloudStorage() (OutputGoogleCloudStorage, error) {
 	var body OutputGoogleCloudStorage
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGoogleCloudStorage overwrites any union data inside the Output as the provided OutputGoogleCloudStorage
+// FromOutputGoogleCloudStorage overwrites any Union data inside the Output as the provided OutputGoogleCloudStorage
 func (t *Output) FromOutputGoogleCloudStorage(v OutputGoogleCloudStorage) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGoogleCloudStorage performs a merge with any union data inside the Output, using the provided OutputGoogleCloudStorage
+// MergeOutputGoogleCloudStorage performs a merge with any Union data inside the Output, using the provided OutputGoogleCloudStorage
 func (t *Output) MergeOutputGoogleCloudStorage(v OutputGoogleCloudStorage) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGoogleCloudLogging returns the union data inside the Output as a OutputGoogleCloudLogging
+// AsOutputGoogleCloudLogging returns the Union data inside the Output as a OutputGoogleCloudLogging
 func (t Output) AsOutputGoogleCloudLogging() (OutputGoogleCloudLogging, error) {
 	var body OutputGoogleCloudLogging
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGoogleCloudLogging overwrites any union data inside the Output as the provided OutputGoogleCloudLogging
+// FromOutputGoogleCloudLogging overwrites any Union data inside the Output as the provided OutputGoogleCloudLogging
 func (t *Output) FromOutputGoogleCloudLogging(v OutputGoogleCloudLogging) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGoogleCloudLogging performs a merge with any union data inside the Output, using the provided OutputGoogleCloudLogging
+// MergeOutputGoogleCloudLogging performs a merge with any Union data inside the Output, using the provided OutputGoogleCloudLogging
 func (t *Output) MergeOutputGoogleCloudLogging(v OutputGoogleCloudLogging) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGooglePubsub returns the union data inside the Output as a OutputGooglePubsub
+// AsOutputGooglePubsub returns the Union data inside the Output as a OutputGooglePubsub
 func (t Output) AsOutputGooglePubsub() (OutputGooglePubsub, error) {
 	var body OutputGooglePubsub
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGooglePubsub overwrites any union data inside the Output as the provided OutputGooglePubsub
+// FromOutputGooglePubsub overwrites any Union data inside the Output as the provided OutputGooglePubsub
 func (t *Output) FromOutputGooglePubsub(v OutputGooglePubsub) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGooglePubsub performs a merge with any union data inside the Output, using the provided OutputGooglePubsub
+// MergeOutputGooglePubsub performs a merge with any Union data inside the Output, using the provided OutputGooglePubsub
 func (t *Output) MergeOutputGooglePubsub(v OutputGooglePubsub) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputExabeam returns the union data inside the Output as a OutputExabeam
+// AsOutputExabeam returns the Union data inside the Output as a OutputExabeam
 func (t Output) AsOutputExabeam() (OutputExabeam, error) {
 	var body OutputExabeam
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputExabeam overwrites any union data inside the Output as the provided OutputExabeam
+// FromOutputExabeam overwrites any Union data inside the Output as the provided OutputExabeam
 func (t *Output) FromOutputExabeam(v OutputExabeam) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputExabeam performs a merge with any union data inside the Output, using the provided OutputExabeam
+// MergeOutputExabeam performs a merge with any Union data inside the Output, using the provided OutputExabeam
 func (t *Output) MergeOutputExabeam(v OutputExabeam) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputKafka returns the union data inside the Output as a OutputKafka
+// AsOutputKafka returns the Union data inside the Output as a OutputKafka
 func (t Output) AsOutputKafka() (OutputKafka, error) {
 	var body OutputKafka
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputKafka overwrites any union data inside the Output as the provided OutputKafka
+// FromOutputKafka overwrites any Union data inside the Output as the provided OutputKafka
 func (t *Output) FromOutputKafka(v OutputKafka) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputKafka performs a merge with any union data inside the Output, using the provided OutputKafka
+// MergeOutputKafka performs a merge with any Union data inside the Output, using the provided OutputKafka
 func (t *Output) MergeOutputKafka(v OutputKafka) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputConfluentCloud returns the union data inside the Output as a OutputConfluentCloud
+// AsOutputConfluentCloud returns the Union data inside the Output as a OutputConfluentCloud
 func (t Output) AsOutputConfluentCloud() (OutputConfluentCloud, error) {
 	var body OutputConfluentCloud
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputConfluentCloud overwrites any union data inside the Output as the provided OutputConfluentCloud
+// FromOutputConfluentCloud overwrites any Union data inside the Output as the provided OutputConfluentCloud
 func (t *Output) FromOutputConfluentCloud(v OutputConfluentCloud) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputConfluentCloud performs a merge with any union data inside the Output, using the provided OutputConfluentCloud
+// MergeOutputConfluentCloud performs a merge with any Union data inside the Output, using the provided OutputConfluentCloud
 func (t *Output) MergeOutputConfluentCloud(v OutputConfluentCloud) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputMsk returns the union data inside the Output as a OutputMsk
+// AsOutputMsk returns the Union data inside the Output as a OutputMsk
 func (t Output) AsOutputMsk() (OutputMsk, error) {
 	var body OutputMsk
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputMsk overwrites any union data inside the Output as the provided OutputMsk
+// FromOutputMsk overwrites any Union data inside the Output as the provided OutputMsk
 func (t *Output) FromOutputMsk(v OutputMsk) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputMsk performs a merge with any union data inside the Output, using the provided OutputMsk
+// MergeOutputMsk performs a merge with any Union data inside the Output, using the provided OutputMsk
 func (t *Output) MergeOutputMsk(v OutputMsk) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputElastic returns the union data inside the Output as a OutputElastic
+// AsOutputElastic returns the Union data inside the Output as a OutputElastic
 func (t Output) AsOutputElastic() (OutputElastic, error) {
 	var body OutputElastic
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputElastic overwrites any union data inside the Output as the provided OutputElastic
+// FromOutputElastic overwrites any Union data inside the Output as the provided OutputElastic
 func (t *Output) FromOutputElastic(v OutputElastic) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputElastic performs a merge with any union data inside the Output, using the provided OutputElastic
+// MergeOutputElastic performs a merge with any Union data inside the Output, using the provided OutputElastic
 func (t *Output) MergeOutputElastic(v OutputElastic) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputElasticCloud returns the union data inside the Output as a OutputElasticCloud
+// AsOutputElasticCloud returns the Union data inside the Output as a OutputElasticCloud
 func (t Output) AsOutputElasticCloud() (OutputElasticCloud, error) {
 	var body OutputElasticCloud
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputElasticCloud overwrites any union data inside the Output as the provided OutputElasticCloud
+// FromOutputElasticCloud overwrites any Union data inside the Output as the provided OutputElasticCloud
 func (t *Output) FromOutputElasticCloud(v OutputElasticCloud) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputElasticCloud performs a merge with any union data inside the Output, using the provided OutputElasticCloud
+// MergeOutputElasticCloud performs a merge with any Union data inside the Output, using the provided OutputElasticCloud
 func (t *Output) MergeOutputElasticCloud(v OutputElasticCloud) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputNewrelic returns the union data inside the Output as a OutputNewrelic
+// AsOutputNewrelic returns the Union data inside the Output as a OutputNewrelic
 func (t Output) AsOutputNewrelic() (OutputNewrelic, error) {
 	var body OutputNewrelic
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputNewrelic overwrites any union data inside the Output as the provided OutputNewrelic
+// FromOutputNewrelic overwrites any Union data inside the Output as the provided OutputNewrelic
 func (t *Output) FromOutputNewrelic(v OutputNewrelic) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputNewrelic performs a merge with any union data inside the Output, using the provided OutputNewrelic
+// MergeOutputNewrelic performs a merge with any Union data inside the Output, using the provided OutputNewrelic
 func (t *Output) MergeOutputNewrelic(v OutputNewrelic) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputNewrelicEvents returns the union data inside the Output as a OutputNewrelicEvents
+// AsOutputNewrelicEvents returns the Union data inside the Output as a OutputNewrelicEvents
 func (t Output) AsOutputNewrelicEvents() (OutputNewrelicEvents, error) {
 	var body OutputNewrelicEvents
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputNewrelicEvents overwrites any union data inside the Output as the provided OutputNewrelicEvents
+// FromOutputNewrelicEvents overwrites any Union data inside the Output as the provided OutputNewrelicEvents
 func (t *Output) FromOutputNewrelicEvents(v OutputNewrelicEvents) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputNewrelicEvents performs a merge with any union data inside the Output, using the provided OutputNewrelicEvents
+// MergeOutputNewrelicEvents performs a merge with any Union data inside the Output, using the provided OutputNewrelicEvents
 func (t *Output) MergeOutputNewrelicEvents(v OutputNewrelicEvents) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputInfluxdb returns the union data inside the Output as a OutputInfluxdb
+// AsOutputInfluxdb returns the Union data inside the Output as a OutputInfluxdb
 func (t Output) AsOutputInfluxdb() (OutputInfluxdb, error) {
 	var body OutputInfluxdb
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputInfluxdb overwrites any union data inside the Output as the provided OutputInfluxdb
+// FromOutputInfluxdb overwrites any Union data inside the Output as the provided OutputInfluxdb
 func (t *Output) FromOutputInfluxdb(v OutputInfluxdb) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputInfluxdb performs a merge with any union data inside the Output, using the provided OutputInfluxdb
+// MergeOutputInfluxdb performs a merge with any Union data inside the Output, using the provided OutputInfluxdb
 func (t *Output) MergeOutputInfluxdb(v OutputInfluxdb) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputCloudwatch returns the union data inside the Output as a OutputCloudwatch
+// AsOutputCloudwatch returns the Union data inside the Output as a OutputCloudwatch
 func (t Output) AsOutputCloudwatch() (OutputCloudwatch, error) {
 	var body OutputCloudwatch
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputCloudwatch overwrites any union data inside the Output as the provided OutputCloudwatch
+// FromOutputCloudwatch overwrites any Union data inside the Output as the provided OutputCloudwatch
 func (t *Output) FromOutputCloudwatch(v OutputCloudwatch) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputCloudwatch performs a merge with any union data inside the Output, using the provided OutputCloudwatch
+// MergeOutputCloudwatch performs a merge with any Union data inside the Output, using the provided OutputCloudwatch
 func (t *Output) MergeOutputCloudwatch(v OutputCloudwatch) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputMinio returns the union data inside the Output as a OutputMinio
+// AsOutputMinio returns the Union data inside the Output as a OutputMinio
 func (t Output) AsOutputMinio() (OutputMinio, error) {
 	var body OutputMinio
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputMinio overwrites any union data inside the Output as the provided OutputMinio
+// FromOutputMinio overwrites any Union data inside the Output as the provided OutputMinio
 func (t *Output) FromOutputMinio(v OutputMinio) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputMinio performs a merge with any union data inside the Output, using the provided OutputMinio
+// MergeOutputMinio performs a merge with any Union data inside the Output, using the provided OutputMinio
 func (t *Output) MergeOutputMinio(v OutputMinio) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputStatsd returns the union data inside the Output as a OutputStatsd
+// AsOutputStatsd returns the Union data inside the Output as a OutputStatsd
 func (t Output) AsOutputStatsd() (OutputStatsd, error) {
 	var body OutputStatsd
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputStatsd overwrites any union data inside the Output as the provided OutputStatsd
+// FromOutputStatsd overwrites any Union data inside the Output as the provided OutputStatsd
 func (t *Output) FromOutputStatsd(v OutputStatsd) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputStatsd performs a merge with any union data inside the Output, using the provided OutputStatsd
+// MergeOutputStatsd performs a merge with any Union data inside the Output, using the provided OutputStatsd
 func (t *Output) MergeOutputStatsd(v OutputStatsd) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputStatsdExt returns the union data inside the Output as a OutputStatsdExt
+// AsOutputStatsdExt returns the Union data inside the Output as a OutputStatsdExt
 func (t Output) AsOutputStatsdExt() (OutputStatsdExt, error) {
 	var body OutputStatsdExt
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputStatsdExt overwrites any union data inside the Output as the provided OutputStatsdExt
+// FromOutputStatsdExt overwrites any Union data inside the Output as the provided OutputStatsdExt
 func (t *Output) FromOutputStatsdExt(v OutputStatsdExt) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputStatsdExt performs a merge with any union data inside the Output, using the provided OutputStatsdExt
+// MergeOutputStatsdExt performs a merge with any Union data inside the Output, using the provided OutputStatsdExt
 func (t *Output) MergeOutputStatsdExt(v OutputStatsdExt) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGraphite returns the union data inside the Output as a OutputGraphite
+// AsOutputGraphite returns the Union data inside the Output as a OutputGraphite
 func (t Output) AsOutputGraphite() (OutputGraphite, error) {
 	var body OutputGraphite
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGraphite overwrites any union data inside the Output as the provided OutputGraphite
+// FromOutputGraphite overwrites any Union data inside the Output as the provided OutputGraphite
 func (t *Output) FromOutputGraphite(v OutputGraphite) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGraphite performs a merge with any union data inside the Output, using the provided OutputGraphite
+// MergeOutputGraphite performs a merge with any Union data inside the Output, using the provided OutputGraphite
 func (t *Output) MergeOutputGraphite(v OutputGraphite) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputRouter returns the union data inside the Output as a OutputRouter
+// AsOutputRouter returns the Union data inside the Output as a OutputRouter
 func (t Output) AsOutputRouter() (OutputRouter, error) {
 	var body OutputRouter
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputRouter overwrites any union data inside the Output as the provided OutputRouter
+// FromOutputRouter overwrites any Union data inside the Output as the provided OutputRouter
 func (t *Output) FromOutputRouter(v OutputRouter) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputRouter performs a merge with any union data inside the Output, using the provided OutputRouter
+// MergeOutputRouter performs a merge with any Union data inside the Output, using the provided OutputRouter
 func (t *Output) MergeOutputRouter(v OutputRouter) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSns returns the union data inside the Output as a OutputSns
+// AsOutputSns returns the Union data inside the Output as a OutputSns
 func (t Output) AsOutputSns() (OutputSns, error) {
 	var body OutputSns
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSns overwrites any union data inside the Output as the provided OutputSns
+// FromOutputSns overwrites any Union data inside the Output as the provided OutputSns
 func (t *Output) FromOutputSns(v OutputSns) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSns performs a merge with any union data inside the Output, using the provided OutputSns
+// MergeOutputSns performs a merge with any Union data inside the Output, using the provided OutputSns
 func (t *Output) MergeOutputSns(v OutputSns) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSqs returns the union data inside the Output as a OutputSqs
+// AsOutputSqs returns the Union data inside the Output as a OutputSqs
 func (t Output) AsOutputSqs() (OutputSqs, error) {
 	var body OutputSqs
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSqs overwrites any union data inside the Output as the provided OutputSqs
+// FromOutputSqs overwrites any Union data inside the Output as the provided OutputSqs
 func (t *Output) FromOutputSqs(v OutputSqs) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSqs performs a merge with any union data inside the Output, using the provided OutputSqs
+// MergeOutputSqs performs a merge with any Union data inside the Output, using the provided OutputSqs
 func (t *Output) MergeOutputSqs(v OutputSqs) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSnmp returns the union data inside the Output as a OutputSnmp
+// AsOutputSnmp returns the Union data inside the Output as a OutputSnmp
 func (t Output) AsOutputSnmp() (OutputSnmp, error) {
 	var body OutputSnmp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSnmp overwrites any union data inside the Output as the provided OutputSnmp
+// FromOutputSnmp overwrites any Union data inside the Output as the provided OutputSnmp
 func (t *Output) FromOutputSnmp(v OutputSnmp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSnmp performs a merge with any union data inside the Output, using the provided OutputSnmp
+// MergeOutputSnmp performs a merge with any Union data inside the Output, using the provided OutputSnmp
 func (t *Output) MergeOutputSnmp(v OutputSnmp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSumoLogic returns the union data inside the Output as a OutputSumoLogic
+// AsOutputSumoLogic returns the Union data inside the Output as a OutputSumoLogic
 func (t Output) AsOutputSumoLogic() (OutputSumoLogic, error) {
 	var body OutputSumoLogic
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSumoLogic overwrites any union data inside the Output as the provided OutputSumoLogic
+// FromOutputSumoLogic overwrites any Union data inside the Output as the provided OutputSumoLogic
 func (t *Output) FromOutputSumoLogic(v OutputSumoLogic) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSumoLogic performs a merge with any union data inside the Output, using the provided OutputSumoLogic
+// MergeOutputSumoLogic performs a merge with any Union data inside the Output, using the provided OutputSumoLogic
 func (t *Output) MergeOutputSumoLogic(v OutputSumoLogic) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDatadog returns the union data inside the Output as a OutputDatadog
+// AsOutputDatadog returns the Union data inside the Output as a OutputDatadog
 func (t Output) AsOutputDatadog() (OutputDatadog, error) {
 	var body OutputDatadog
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDatadog overwrites any union data inside the Output as the provided OutputDatadog
+// FromOutputDatadog overwrites any Union data inside the Output as the provided OutputDatadog
 func (t *Output) FromOutputDatadog(v OutputDatadog) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDatadog performs a merge with any union data inside the Output, using the provided OutputDatadog
+// MergeOutputDatadog performs a merge with any Union data inside the Output, using the provided OutputDatadog
 func (t *Output) MergeOutputDatadog(v OutputDatadog) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGrafanaCloud returns the union data inside the Output as a OutputGrafanaCloud
+// AsOutputGrafanaCloud returns the Union data inside the Output as a OutputGrafanaCloud
 func (t Output) AsOutputGrafanaCloud() (OutputGrafanaCloud, error) {
 	var body OutputGrafanaCloud
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGrafanaCloud overwrites any union data inside the Output as the provided OutputGrafanaCloud
+// FromOutputGrafanaCloud overwrites any Union data inside the Output as the provided OutputGrafanaCloud
 func (t *Output) FromOutputGrafanaCloud(v OutputGrafanaCloud) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGrafanaCloud performs a merge with any union data inside the Output, using the provided OutputGrafanaCloud
+// MergeOutputGrafanaCloud performs a merge with any Union data inside the Output, using the provided OutputGrafanaCloud
 func (t *Output) MergeOutputGrafanaCloud(v OutputGrafanaCloud) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputLoki returns the union data inside the Output as a OutputLoki
+// AsOutputLoki returns the Union data inside the Output as a OutputLoki
 func (t Output) AsOutputLoki() (OutputLoki, error) {
 	var body OutputLoki
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputLoki overwrites any union data inside the Output as the provided OutputLoki
+// FromOutputLoki overwrites any Union data inside the Output as the provided OutputLoki
 func (t *Output) FromOutputLoki(v OutputLoki) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputLoki performs a merge with any union data inside the Output, using the provided OutputLoki
+// MergeOutputLoki performs a merge with any Union data inside the Output, using the provided OutputLoki
 func (t *Output) MergeOutputLoki(v OutputLoki) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputPrometheus returns the union data inside the Output as a OutputPrometheus
+// AsOutputPrometheus returns the Union data inside the Output as a OutputPrometheus
 func (t Output) AsOutputPrometheus() (OutputPrometheus, error) {
 	var body OutputPrometheus
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputPrometheus overwrites any union data inside the Output as the provided OutputPrometheus
+// FromOutputPrometheus overwrites any Union data inside the Output as the provided OutputPrometheus
 func (t *Output) FromOutputPrometheus(v OutputPrometheus) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputPrometheus performs a merge with any union data inside the Output, using the provided OutputPrometheus
+// MergeOutputPrometheus performs a merge with any Union data inside the Output, using the provided OutputPrometheus
 func (t *Output) MergeOutputPrometheus(v OutputPrometheus) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputRing returns the union data inside the Output as a OutputRing
+// AsOutputRing returns the Union data inside the Output as a OutputRing
 func (t Output) AsOutputRing() (OutputRing, error) {
 	var body OutputRing
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputRing overwrites any union data inside the Output as the provided OutputRing
+// FromOutputRing overwrites any Union data inside the Output as the provided OutputRing
 func (t *Output) FromOutputRing(v OutputRing) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputRing performs a merge with any union data inside the Output, using the provided OutputRing
+// MergeOutputRing performs a merge with any Union data inside the Output, using the provided OutputRing
 func (t *Output) MergeOutputRing(v OutputRing) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputOpenTelemetry returns the union data inside the Output as a OutputOpenTelemetry
+// AsOutputOpenTelemetry returns the Union data inside the Output as a OutputOpenTelemetry
 func (t Output) AsOutputOpenTelemetry() (OutputOpenTelemetry, error) {
 	var body OutputOpenTelemetry
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputOpenTelemetry overwrites any union data inside the Output as the provided OutputOpenTelemetry
+// FromOutputOpenTelemetry overwrites any Union data inside the Output as the provided OutputOpenTelemetry
 func (t *Output) FromOutputOpenTelemetry(v OutputOpenTelemetry) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputOpenTelemetry performs a merge with any union data inside the Output, using the provided OutputOpenTelemetry
+// MergeOutputOpenTelemetry performs a merge with any Union data inside the Output, using the provided OutputOpenTelemetry
 func (t *Output) MergeOutputOpenTelemetry(v OutputOpenTelemetry) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputServiceNow returns the union data inside the Output as a OutputServiceNow
+// AsOutputServiceNow returns the Union data inside the Output as a OutputServiceNow
 func (t Output) AsOutputServiceNow() (OutputServiceNow, error) {
 	var body OutputServiceNow
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputServiceNow overwrites any union data inside the Output as the provided OutputServiceNow
+// FromOutputServiceNow overwrites any Union data inside the Output as the provided OutputServiceNow
 func (t *Output) FromOutputServiceNow(v OutputServiceNow) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputServiceNow performs a merge with any union data inside the Output, using the provided OutputServiceNow
+// MergeOutputServiceNow performs a merge with any Union data inside the Output, using the provided OutputServiceNow
 func (t *Output) MergeOutputServiceNow(v OutputServiceNow) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDataset returns the union data inside the Output as a OutputDataset
+// AsOutputDataset returns the Union data inside the Output as a OutputDataset
 func (t Output) AsOutputDataset() (OutputDataset, error) {
 	var body OutputDataset
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDataset overwrites any union data inside the Output as the provided OutputDataset
+// FromOutputDataset overwrites any Union data inside the Output as the provided OutputDataset
 func (t *Output) FromOutputDataset(v OutputDataset) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDataset performs a merge with any union data inside the Output, using the provided OutputDataset
+// MergeOutputDataset performs a merge with any Union data inside the Output, using the provided OutputDataset
 func (t *Output) MergeOutputDataset(v OutputDataset) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputCriblTcp returns the union data inside the Output as a OutputCriblTcp
+// AsOutputCriblTcp returns the Union data inside the Output as a OutputCriblTcp
 func (t Output) AsOutputCriblTcp() (OutputCriblTcp, error) {
 	var body OutputCriblTcp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputCriblTcp overwrites any union data inside the Output as the provided OutputCriblTcp
+// FromOutputCriblTcp overwrites any Union data inside the Output as the provided OutputCriblTcp
 func (t *Output) FromOutputCriblTcp(v OutputCriblTcp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputCriblTcp performs a merge with any union data inside the Output, using the provided OutputCriblTcp
+// MergeOutputCriblTcp performs a merge with any Union data inside the Output, using the provided OutputCriblTcp
 func (t *Output) MergeOutputCriblTcp(v OutputCriblTcp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputCriblHttp returns the union data inside the Output as a OutputCriblHttp
+// AsOutputCriblHttp returns the Union data inside the Output as a OutputCriblHttp
 func (t Output) AsOutputCriblHttp() (OutputCriblHttp, error) {
 	var body OutputCriblHttp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputCriblHttp overwrites any union data inside the Output as the provided OutputCriblHttp
+// FromOutputCriblHttp overwrites any Union data inside the Output as the provided OutputCriblHttp
 func (t *Output) FromOutputCriblHttp(v OutputCriblHttp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputCriblHttp performs a merge with any union data inside the Output, using the provided OutputCriblHttp
+// MergeOutputCriblHttp performs a merge with any Union data inside the Output, using the provided OutputCriblHttp
 func (t *Output) MergeOutputCriblHttp(v OutputCriblHttp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputHumioHec returns the union data inside the Output as a OutputHumioHec
+// AsOutputHumioHec returns the Union data inside the Output as a OutputHumioHec
 func (t Output) AsOutputHumioHec() (OutputHumioHec, error) {
 	var body OutputHumioHec
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputHumioHec overwrites any union data inside the Output as the provided OutputHumioHec
+// FromOutputHumioHec overwrites any Union data inside the Output as the provided OutputHumioHec
 func (t *Output) FromOutputHumioHec(v OutputHumioHec) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputHumioHec performs a merge with any union data inside the Output, using the provided OutputHumioHec
+// MergeOutputHumioHec performs a merge with any Union data inside the Output, using the provided OutputHumioHec
 func (t *Output) MergeOutputHumioHec(v OutputHumioHec) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputCrowdstrikeNextGenSiem returns the union data inside the Output as a OutputCrowdstrikeNextGenSiem
+// AsOutputCrowdstrikeNextGenSiem returns the Union data inside the Output as a OutputCrowdstrikeNextGenSiem
 func (t Output) AsOutputCrowdstrikeNextGenSiem() (OutputCrowdstrikeNextGenSiem, error) {
 	var body OutputCrowdstrikeNextGenSiem
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputCrowdstrikeNextGenSiem overwrites any union data inside the Output as the provided OutputCrowdstrikeNextGenSiem
+// FromOutputCrowdstrikeNextGenSiem overwrites any Union data inside the Output as the provided OutputCrowdstrikeNextGenSiem
 func (t *Output) FromOutputCrowdstrikeNextGenSiem(v OutputCrowdstrikeNextGenSiem) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputCrowdstrikeNextGenSiem performs a merge with any union data inside the Output, using the provided OutputCrowdstrikeNextGenSiem
+// MergeOutputCrowdstrikeNextGenSiem performs a merge with any Union data inside the Output, using the provided OutputCrowdstrikeNextGenSiem
 func (t *Output) MergeOutputCrowdstrikeNextGenSiem(v OutputCrowdstrikeNextGenSiem) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDlS3 returns the union data inside the Output as a OutputDlS3
+// AsOutputDlS3 returns the Union data inside the Output as a OutputDlS3
 func (t Output) AsOutputDlS3() (OutputDlS3, error) {
 	var body OutputDlS3
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDlS3 overwrites any union data inside the Output as the provided OutputDlS3
+// FromOutputDlS3 overwrites any Union data inside the Output as the provided OutputDlS3
 func (t *Output) FromOutputDlS3(v OutputDlS3) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDlS3 performs a merge with any union data inside the Output, using the provided OutputDlS3
+// MergeOutputDlS3 performs a merge with any Union data inside the Output, using the provided OutputDlS3
 func (t *Output) MergeOutputDlS3(v OutputDlS3) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputSecurityLake returns the union data inside the Output as a OutputSecurityLake
+// AsOutputSecurityLake returns the Union data inside the Output as a OutputSecurityLake
 func (t Output) AsOutputSecurityLake() (OutputSecurityLake, error) {
 	var body OutputSecurityLake
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputSecurityLake overwrites any union data inside the Output as the provided OutputSecurityLake
+// FromOutputSecurityLake overwrites any Union data inside the Output as the provided OutputSecurityLake
 func (t *Output) FromOutputSecurityLake(v OutputSecurityLake) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputSecurityLake performs a merge with any union data inside the Output, using the provided OutputSecurityLake
+// MergeOutputSecurityLake performs a merge with any Union data inside the Output, using the provided OutputSecurityLake
 func (t *Output) MergeOutputSecurityLake(v OutputSecurityLake) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputCriblLake returns the union data inside the Output as a OutputCriblLake
+// AsOutputCriblLake returns the Union data inside the Output as a OutputCriblLake
 func (t Output) AsOutputCriblLake() (OutputCriblLake, error) {
 	var body OutputCriblLake
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputCriblLake overwrites any union data inside the Output as the provided OutputCriblLake
+// FromOutputCriblLake overwrites any Union data inside the Output as the provided OutputCriblLake
 func (t *Output) FromOutputCriblLake(v OutputCriblLake) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputCriblLake performs a merge with any union data inside the Output, using the provided OutputCriblLake
+// MergeOutputCriblLake performs a merge with any Union data inside the Output, using the provided OutputCriblLake
 func (t *Output) MergeOutputCriblLake(v OutputCriblLake) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDiskSpool returns the union data inside the Output as a OutputDiskSpool
+// AsOutputDiskSpool returns the Union data inside the Output as a OutputDiskSpool
 func (t Output) AsOutputDiskSpool() (OutputDiskSpool, error) {
 	var body OutputDiskSpool
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDiskSpool overwrites any union data inside the Output as the provided OutputDiskSpool
+// FromOutputDiskSpool overwrites any Union data inside the Output as the provided OutputDiskSpool
 func (t *Output) FromOutputDiskSpool(v OutputDiskSpool) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDiskSpool performs a merge with any union data inside the Output, using the provided OutputDiskSpool
+// MergeOutputDiskSpool performs a merge with any Union data inside the Output, using the provided OutputDiskSpool
 func (t *Output) MergeOutputDiskSpool(v OutputDiskSpool) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputClickHouse returns the union data inside the Output as a OutputClickHouse
+// AsOutputClickHouse returns the Union data inside the Output as a OutputClickHouse
 func (t Output) AsOutputClickHouse() (OutputClickHouse, error) {
 	var body OutputClickHouse
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputClickHouse overwrites any union data inside the Output as the provided OutputClickHouse
+// FromOutputClickHouse overwrites any Union data inside the Output as the provided OutputClickHouse
 func (t *Output) FromOutputClickHouse(v OutputClickHouse) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputClickHouse performs a merge with any union data inside the Output, using the provided OutputClickHouse
+// MergeOutputClickHouse performs a merge with any Union data inside the Output, using the provided OutputClickHouse
 func (t *Output) MergeOutputClickHouse(v OutputClickHouse) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputNetflow returns the union data inside the Output as a OutputNetflow
+// AsOutputNetflow returns the Union data inside the Output as a OutputNetflow
 func (t Output) AsOutputNetflow() (OutputNetflow, error) {
 	var body OutputNetflow
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputNetflow overwrites any union data inside the Output as the provided OutputNetflow
+// FromOutputNetflow overwrites any Union data inside the Output as the provided OutputNetflow
 func (t *Output) FromOutputNetflow(v OutputNetflow) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputNetflow performs a merge with any union data inside the Output, using the provided OutputNetflow
+// MergeOutputNetflow performs a merge with any Union data inside the Output, using the provided OutputNetflow
 func (t *Output) MergeOutputNetflow(v OutputNetflow) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDynatraceHttp returns the union data inside the Output as a OutputDynatraceHttp
+// AsOutputDynatraceHttp returns the Union data inside the Output as a OutputDynatraceHttp
 func (t Output) AsOutputDynatraceHttp() (OutputDynatraceHttp, error) {
 	var body OutputDynatraceHttp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDynatraceHttp overwrites any union data inside the Output as the provided OutputDynatraceHttp
+// FromOutputDynatraceHttp overwrites any Union data inside the Output as the provided OutputDynatraceHttp
 func (t *Output) FromOutputDynatraceHttp(v OutputDynatraceHttp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDynatraceHttp performs a merge with any union data inside the Output, using the provided OutputDynatraceHttp
+// MergeOutputDynatraceHttp performs a merge with any Union data inside the Output, using the provided OutputDynatraceHttp
 func (t *Output) MergeOutputDynatraceHttp(v OutputDynatraceHttp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputDynatraceOtlp returns the union data inside the Output as a OutputDynatraceOtlp
+// AsOutputDynatraceOtlp returns the Union data inside the Output as a OutputDynatraceOtlp
 func (t Output) AsOutputDynatraceOtlp() (OutputDynatraceOtlp, error) {
 	var body OutputDynatraceOtlp
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputDynatraceOtlp overwrites any union data inside the Output as the provided OutputDynatraceOtlp
+// FromOutputDynatraceOtlp overwrites any Union data inside the Output as the provided OutputDynatraceOtlp
 func (t *Output) FromOutputDynatraceOtlp(v OutputDynatraceOtlp) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputDynatraceOtlp performs a merge with any union data inside the Output, using the provided OutputDynatraceOtlp
+// MergeOutputDynatraceOtlp performs a merge with any Union data inside the Output, using the provided OutputDynatraceOtlp
 func (t *Output) MergeOutputDynatraceOtlp(v OutputDynatraceOtlp) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t Output) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *Output) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsOutputGrafanaCloud0 returns the union data inside the OutputGrafanaCloud as a OutputGrafanaCloud0
+// AsOutputGrafanaCloud0 returns the Union data inside the OutputGrafanaCloud as a OutputGrafanaCloud0
 func (t OutputGrafanaCloud) AsOutputGrafanaCloud0() (OutputGrafanaCloud0, error) {
 	var body OutputGrafanaCloud0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGrafanaCloud0 overwrites any union data inside the OutputGrafanaCloud as the provided OutputGrafanaCloud0
+// FromOutputGrafanaCloud0 overwrites any Union data inside the OutputGrafanaCloud as the provided OutputGrafanaCloud0
 func (t *OutputGrafanaCloud) FromOutputGrafanaCloud0(v OutputGrafanaCloud0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGrafanaCloud0 performs a merge with any union data inside the OutputGrafanaCloud, using the provided OutputGrafanaCloud0
+// MergeOutputGrafanaCloud0 performs a merge with any Union data inside the OutputGrafanaCloud, using the provided OutputGrafanaCloud0
 func (t *OutputGrafanaCloud) MergeOutputGrafanaCloud0(v OutputGrafanaCloud0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsOutputGrafanaCloud1 returns the union data inside the OutputGrafanaCloud as a OutputGrafanaCloud1
+// AsOutputGrafanaCloud1 returns the Union data inside the OutputGrafanaCloud as a OutputGrafanaCloud1
 func (t OutputGrafanaCloud) AsOutputGrafanaCloud1() (OutputGrafanaCloud1, error) {
 	var body OutputGrafanaCloud1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromOutputGrafanaCloud1 overwrites any union data inside the OutputGrafanaCloud as the provided OutputGrafanaCloud1
+// FromOutputGrafanaCloud1 overwrites any Union data inside the OutputGrafanaCloud as the provided OutputGrafanaCloud1
 func (t *OutputGrafanaCloud) FromOutputGrafanaCloud1(v OutputGrafanaCloud1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeOutputGrafanaCloud1 performs a merge with any union data inside the OutputGrafanaCloud, using the provided OutputGrafanaCloud1
+// MergeOutputGrafanaCloud1 performs a merge with any Union data inside the OutputGrafanaCloud, using the provided OutputGrafanaCloud1
 func (t *OutputGrafanaCloud) MergeOutputGrafanaCloud1(v OutputGrafanaCloud1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t OutputGrafanaCloud) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	if err != nil {
 		return nil, err
 	}
 	object := make(map[string]json.RawMessage)
-	if t.union != nil {
+	if t.Union != nil {
 		err = json.Unmarshal(b, &object)
 		if err != nil {
 			return nil, err
@@ -39418,7 +39418,7 @@ func (t OutputGrafanaCloud) MarshalJSON() ([]byte, error) {
 }
 
 func (t *OutputGrafanaCloud) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	if err != nil {
 		return err
 	}
@@ -39690,1047 +39690,1047 @@ func (t *OutputGrafanaCloud) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsPreviewOptionsEarliest0 returns the union data inside the PreviewOptions_Earliest as a PreviewOptionsEarliest0
+// AsPreviewOptionsEarliest0 returns the Union data inside the PreviewOptions_Earliest as a PreviewOptionsEarliest0
 func (t PreviewOptions_Earliest) AsPreviewOptionsEarliest0() (PreviewOptionsEarliest0, error) {
 	var body PreviewOptionsEarliest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromPreviewOptionsEarliest0 overwrites any union data inside the PreviewOptions_Earliest as the provided PreviewOptionsEarliest0
+// FromPreviewOptionsEarliest0 overwrites any Union data inside the PreviewOptions_Earliest as the provided PreviewOptionsEarliest0
 func (t *PreviewOptions_Earliest) FromPreviewOptionsEarliest0(v PreviewOptionsEarliest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergePreviewOptionsEarliest0 performs a merge with any union data inside the PreviewOptions_Earliest, using the provided PreviewOptionsEarliest0
+// MergePreviewOptionsEarliest0 performs a merge with any Union data inside the PreviewOptions_Earliest, using the provided PreviewOptionsEarliest0
 func (t *PreviewOptions_Earliest) MergePreviewOptionsEarliest0(v PreviewOptionsEarliest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsPreviewOptionsEarliest1 returns the union data inside the PreviewOptions_Earliest as a PreviewOptionsEarliest1
+// AsPreviewOptionsEarliest1 returns the Union data inside the PreviewOptions_Earliest as a PreviewOptionsEarliest1
 func (t PreviewOptions_Earliest) AsPreviewOptionsEarliest1() (PreviewOptionsEarliest1, error) {
 	var body PreviewOptionsEarliest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromPreviewOptionsEarliest1 overwrites any union data inside the PreviewOptions_Earliest as the provided PreviewOptionsEarliest1
+// FromPreviewOptionsEarliest1 overwrites any Union data inside the PreviewOptions_Earliest as the provided PreviewOptionsEarliest1
 func (t *PreviewOptions_Earliest) FromPreviewOptionsEarliest1(v PreviewOptionsEarliest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergePreviewOptionsEarliest1 performs a merge with any union data inside the PreviewOptions_Earliest, using the provided PreviewOptionsEarliest1
+// MergePreviewOptionsEarliest1 performs a merge with any Union data inside the PreviewOptions_Earliest, using the provided PreviewOptionsEarliest1
 func (t *PreviewOptions_Earliest) MergePreviewOptionsEarliest1(v PreviewOptionsEarliest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t PreviewOptions_Earliest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *PreviewOptions_Earliest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsPreviewOptionsLatest0 returns the union data inside the PreviewOptions_Latest as a PreviewOptionsLatest0
+// AsPreviewOptionsLatest0 returns the Union data inside the PreviewOptions_Latest as a PreviewOptionsLatest0
 func (t PreviewOptions_Latest) AsPreviewOptionsLatest0() (PreviewOptionsLatest0, error) {
 	var body PreviewOptionsLatest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromPreviewOptionsLatest0 overwrites any union data inside the PreviewOptions_Latest as the provided PreviewOptionsLatest0
+// FromPreviewOptionsLatest0 overwrites any Union data inside the PreviewOptions_Latest as the provided PreviewOptionsLatest0
 func (t *PreviewOptions_Latest) FromPreviewOptionsLatest0(v PreviewOptionsLatest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergePreviewOptionsLatest0 performs a merge with any union data inside the PreviewOptions_Latest, using the provided PreviewOptionsLatest0
+// MergePreviewOptionsLatest0 performs a merge with any Union data inside the PreviewOptions_Latest, using the provided PreviewOptionsLatest0
 func (t *PreviewOptions_Latest) MergePreviewOptionsLatest0(v PreviewOptionsLatest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsPreviewOptionsLatest1 returns the union data inside the PreviewOptions_Latest as a PreviewOptionsLatest1
+// AsPreviewOptionsLatest1 returns the Union data inside the PreviewOptions_Latest as a PreviewOptionsLatest1
 func (t PreviewOptions_Latest) AsPreviewOptionsLatest1() (PreviewOptionsLatest1, error) {
 	var body PreviewOptionsLatest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromPreviewOptionsLatest1 overwrites any union data inside the PreviewOptions_Latest as the provided PreviewOptionsLatest1
+// FromPreviewOptionsLatest1 overwrites any Union data inside the PreviewOptions_Latest as the provided PreviewOptionsLatest1
 func (t *PreviewOptions_Latest) FromPreviewOptionsLatest1(v PreviewOptionsLatest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergePreviewOptionsLatest1 performs a merge with any union data inside the PreviewOptions_Latest, using the provided PreviewOptionsLatest1
+// MergePreviewOptionsLatest1 performs a merge with any Union data inside the PreviewOptions_Latest, using the provided PreviewOptionsLatest1
 func (t *PreviewOptions_Latest) MergePreviewOptionsLatest1(v PreviewOptionsLatest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t PreviewOptions_Latest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *PreviewOptions_Latest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsRunnableJobCollection returns the union data inside the RunnableJob as a RunnableJobCollection
+// AsRunnableJobCollection returns the Union data inside the RunnableJob as a RunnableJobCollection
 func (t RunnableJob) AsRunnableJobCollection() (RunnableJobCollection, error) {
 	var body RunnableJobCollection
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromRunnableJobCollection overwrites any union data inside the RunnableJob as the provided RunnableJobCollection
+// FromRunnableJobCollection overwrites any Union data inside the RunnableJob as the provided RunnableJobCollection
 func (t *RunnableJob) FromRunnableJobCollection(v RunnableJobCollection) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeRunnableJobCollection performs a merge with any union data inside the RunnableJob, using the provided RunnableJobCollection
+// MergeRunnableJobCollection performs a merge with any Union data inside the RunnableJob, using the provided RunnableJobCollection
 func (t *RunnableJob) MergeRunnableJobCollection(v RunnableJobCollection) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsRunnableJobExecutor returns the union data inside the RunnableJob as a RunnableJobExecutor
+// AsRunnableJobExecutor returns the Union data inside the RunnableJob as a RunnableJobExecutor
 func (t RunnableJob) AsRunnableJobExecutor() (RunnableJobExecutor, error) {
 	var body RunnableJobExecutor
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromRunnableJobExecutor overwrites any union data inside the RunnableJob as the provided RunnableJobExecutor
+// FromRunnableJobExecutor overwrites any Union data inside the RunnableJob as the provided RunnableJobExecutor
 func (t *RunnableJob) FromRunnableJobExecutor(v RunnableJobExecutor) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeRunnableJobExecutor performs a merge with any union data inside the RunnableJob, using the provided RunnableJobExecutor
+// MergeRunnableJobExecutor performs a merge with any Union data inside the RunnableJob, using the provided RunnableJobExecutor
 func (t *RunnableJob) MergeRunnableJobExecutor(v RunnableJobExecutor) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsRunnableJobScheduledSearch returns the union data inside the RunnableJob as a RunnableJobScheduledSearch
+// AsRunnableJobScheduledSearch returns the Union data inside the RunnableJob as a RunnableJobScheduledSearch
 func (t RunnableJob) AsRunnableJobScheduledSearch() (RunnableJobScheduledSearch, error) {
 	var body RunnableJobScheduledSearch
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromRunnableJobScheduledSearch overwrites any union data inside the RunnableJob as the provided RunnableJobScheduledSearch
+// FromRunnableJobScheduledSearch overwrites any Union data inside the RunnableJob as the provided RunnableJobScheduledSearch
 func (t *RunnableJob) FromRunnableJobScheduledSearch(v RunnableJobScheduledSearch) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeRunnableJobScheduledSearch performs a merge with any union data inside the RunnableJob, using the provided RunnableJobScheduledSearch
+// MergeRunnableJobScheduledSearch performs a merge with any Union data inside the RunnableJob, using the provided RunnableJobScheduledSearch
 func (t *RunnableJob) MergeRunnableJobScheduledSearch(v RunnableJobScheduledSearch) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t RunnableJob) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *RunnableJob) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSavedJobCollection returns the union data inside the SavedJob as a SavedJobCollection
+// AsSavedJobCollection returns the Union data inside the SavedJob as a SavedJobCollection
 func (t SavedJob) AsSavedJobCollection() (SavedJobCollection, error) {
 	var body SavedJobCollection
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSavedJobCollection overwrites any union data inside the SavedJob as the provided SavedJobCollection
+// FromSavedJobCollection overwrites any Union data inside the SavedJob as the provided SavedJobCollection
 func (t *SavedJob) FromSavedJobCollection(v SavedJobCollection) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSavedJobCollection performs a merge with any union data inside the SavedJob, using the provided SavedJobCollection
+// MergeSavedJobCollection performs a merge with any Union data inside the SavedJob, using the provided SavedJobCollection
 func (t *SavedJob) MergeSavedJobCollection(v SavedJobCollection) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSavedJobExecutor returns the union data inside the SavedJob as a SavedJobExecutor
+// AsSavedJobExecutor returns the Union data inside the SavedJob as a SavedJobExecutor
 func (t SavedJob) AsSavedJobExecutor() (SavedJobExecutor, error) {
 	var body SavedJobExecutor
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSavedJobExecutor overwrites any union data inside the SavedJob as the provided SavedJobExecutor
+// FromSavedJobExecutor overwrites any Union data inside the SavedJob as the provided SavedJobExecutor
 func (t *SavedJob) FromSavedJobExecutor(v SavedJobExecutor) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSavedJobExecutor performs a merge with any union data inside the SavedJob, using the provided SavedJobExecutor
+// MergeSavedJobExecutor performs a merge with any Union data inside the SavedJob, using the provided SavedJobExecutor
 func (t *SavedJob) MergeSavedJobExecutor(v SavedJobExecutor) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSavedJobScheduledSearch returns the union data inside the SavedJob as a SavedJobScheduledSearch
+// AsSavedJobScheduledSearch returns the Union data inside the SavedJob as a SavedJobScheduledSearch
 func (t SavedJob) AsSavedJobScheduledSearch() (SavedJobScheduledSearch, error) {
 	var body SavedJobScheduledSearch
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSavedJobScheduledSearch overwrites any union data inside the SavedJob as the provided SavedJobScheduledSearch
+// FromSavedJobScheduledSearch overwrites any Union data inside the SavedJob as the provided SavedJobScheduledSearch
 func (t *SavedJob) FromSavedJobScheduledSearch(v SavedJobScheduledSearch) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSavedJobScheduledSearch performs a merge with any union data inside the SavedJob, using the provided SavedJobScheduledSearch
+// MergeSavedJobScheduledSearch performs a merge with any Union data inside the SavedJob, using the provided SavedJobScheduledSearch
 func (t *SavedJob) MergeSavedJobScheduledSearch(v SavedJobScheduledSearch) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SavedJob) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SavedJob) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchDashboardElements0 returns the union data inside the SearchDashboard_Elements_Item as a SearchDashboardElements0
+// AsSearchDashboardElements0 returns the Union data inside the SearchDashboard_Elements_Item as a SearchDashboardElements0
 func (t SearchDashboard_Elements_Item) AsSearchDashboardElements0() (SearchDashboardElements0, error) {
 	var body SearchDashboardElements0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchDashboardElements0 overwrites any union data inside the SearchDashboard_Elements_Item as the provided SearchDashboardElements0
+// FromSearchDashboardElements0 overwrites any Union data inside the SearchDashboard_Elements_Item as the provided SearchDashboardElements0
 func (t *SearchDashboard_Elements_Item) FromSearchDashboardElements0(v SearchDashboardElements0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchDashboardElements0 performs a merge with any union data inside the SearchDashboard_Elements_Item, using the provided SearchDashboardElements0
+// MergeSearchDashboardElements0 performs a merge with any Union data inside the SearchDashboard_Elements_Item, using the provided SearchDashboardElements0
 func (t *SearchDashboard_Elements_Item) MergeSearchDashboardElements0(v SearchDashboardElements0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchDashboardElements1 returns the union data inside the SearchDashboard_Elements_Item as a SearchDashboardElements1
+// AsSearchDashboardElements1 returns the Union data inside the SearchDashboard_Elements_Item as a SearchDashboardElements1
 func (t SearchDashboard_Elements_Item) AsSearchDashboardElements1() (SearchDashboardElements1, error) {
 	var body SearchDashboardElements1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchDashboardElements1 overwrites any union data inside the SearchDashboard_Elements_Item as the provided SearchDashboardElements1
+// FromSearchDashboardElements1 overwrites any Union data inside the SearchDashboard_Elements_Item as the provided SearchDashboardElements1
 func (t *SearchDashboard_Elements_Item) FromSearchDashboardElements1(v SearchDashboardElements1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchDashboardElements1 performs a merge with any union data inside the SearchDashboard_Elements_Item, using the provided SearchDashboardElements1
+// MergeSearchDashboardElements1 performs a merge with any Union data inside the SearchDashboard_Elements_Item, using the provided SearchDashboardElements1
 func (t *SearchDashboard_Elements_Item) MergeSearchDashboardElements1(v SearchDashboardElements1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchDashboard_Elements_Item) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchDashboard_Elements_Item) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchJobEarliest0 returns the union data inside the SearchJob_Earliest as a SearchJobEarliest0
+// AsSearchJobEarliest0 returns the Union data inside the SearchJob_Earliest as a SearchJobEarliest0
 func (t SearchJob_Earliest) AsSearchJobEarliest0() (SearchJobEarliest0, error) {
 	var body SearchJobEarliest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobEarliest0 overwrites any union data inside the SearchJob_Earliest as the provided SearchJobEarliest0
+// FromSearchJobEarliest0 overwrites any Union data inside the SearchJob_Earliest as the provided SearchJobEarliest0
 func (t *SearchJob_Earliest) FromSearchJobEarliest0(v SearchJobEarliest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobEarliest0 performs a merge with any union data inside the SearchJob_Earliest, using the provided SearchJobEarliest0
+// MergeSearchJobEarliest0 performs a merge with any Union data inside the SearchJob_Earliest, using the provided SearchJobEarliest0
 func (t *SearchJob_Earliest) MergeSearchJobEarliest0(v SearchJobEarliest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchJobEarliest1 returns the union data inside the SearchJob_Earliest as a SearchJobEarliest1
+// AsSearchJobEarliest1 returns the Union data inside the SearchJob_Earliest as a SearchJobEarliest1
 func (t SearchJob_Earliest) AsSearchJobEarliest1() (SearchJobEarliest1, error) {
 	var body SearchJobEarliest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobEarliest1 overwrites any union data inside the SearchJob_Earliest as the provided SearchJobEarliest1
+// FromSearchJobEarliest1 overwrites any Union data inside the SearchJob_Earliest as the provided SearchJobEarliest1
 func (t *SearchJob_Earliest) FromSearchJobEarliest1(v SearchJobEarliest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobEarliest1 performs a merge with any union data inside the SearchJob_Earliest, using the provided SearchJobEarliest1
+// MergeSearchJobEarliest1 performs a merge with any Union data inside the SearchJob_Earliest, using the provided SearchJobEarliest1
 func (t *SearchJob_Earliest) MergeSearchJobEarliest1(v SearchJobEarliest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchJob_Earliest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchJob_Earliest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchJobLatest0 returns the union data inside the SearchJob_Latest as a SearchJobLatest0
+// AsSearchJobLatest0 returns the Union data inside the SearchJob_Latest as a SearchJobLatest0
 func (t SearchJob_Latest) AsSearchJobLatest0() (SearchJobLatest0, error) {
 	var body SearchJobLatest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobLatest0 overwrites any union data inside the SearchJob_Latest as the provided SearchJobLatest0
+// FromSearchJobLatest0 overwrites any Union data inside the SearchJob_Latest as the provided SearchJobLatest0
 func (t *SearchJob_Latest) FromSearchJobLatest0(v SearchJobLatest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobLatest0 performs a merge with any union data inside the SearchJob_Latest, using the provided SearchJobLatest0
+// MergeSearchJobLatest0 performs a merge with any Union data inside the SearchJob_Latest, using the provided SearchJobLatest0
 func (t *SearchJob_Latest) MergeSearchJobLatest0(v SearchJobLatest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchJobLatest1 returns the union data inside the SearchJob_Latest as a SearchJobLatest1
+// AsSearchJobLatest1 returns the Union data inside the SearchJob_Latest as a SearchJobLatest1
 func (t SearchJob_Latest) AsSearchJobLatest1() (SearchJobLatest1, error) {
 	var body SearchJobLatest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobLatest1 overwrites any union data inside the SearchJob_Latest as the provided SearchJobLatest1
+// FromSearchJobLatest1 overwrites any Union data inside the SearchJob_Latest as the provided SearchJobLatest1
 func (t *SearchJob_Latest) FromSearchJobLatest1(v SearchJobLatest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobLatest1 performs a merge with any union data inside the SearchJob_Latest, using the provided SearchJobLatest1
+// MergeSearchJobLatest1 performs a merge with any Union data inside the SearchJob_Latest, using the provided SearchJobLatest1
 func (t *SearchJob_Latest) MergeSearchJobLatest1(v SearchJobLatest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchJob_Latest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchJob_Latest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchJobStageConfigEarliest0 returns the union data inside the SearchJobStageConfig_Earliest as a SearchJobStageConfigEarliest0
+// AsSearchJobStageConfigEarliest0 returns the Union data inside the SearchJobStageConfig_Earliest as a SearchJobStageConfigEarliest0
 func (t SearchJobStageConfig_Earliest) AsSearchJobStageConfigEarliest0() (SearchJobStageConfigEarliest0, error) {
 	var body SearchJobStageConfigEarliest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobStageConfigEarliest0 overwrites any union data inside the SearchJobStageConfig_Earliest as the provided SearchJobStageConfigEarliest0
+// FromSearchJobStageConfigEarliest0 overwrites any Union data inside the SearchJobStageConfig_Earliest as the provided SearchJobStageConfigEarliest0
 func (t *SearchJobStageConfig_Earliest) FromSearchJobStageConfigEarliest0(v SearchJobStageConfigEarliest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobStageConfigEarliest0 performs a merge with any union data inside the SearchJobStageConfig_Earliest, using the provided SearchJobStageConfigEarliest0
+// MergeSearchJobStageConfigEarliest0 performs a merge with any Union data inside the SearchJobStageConfig_Earliest, using the provided SearchJobStageConfigEarliest0
 func (t *SearchJobStageConfig_Earliest) MergeSearchJobStageConfigEarliest0(v SearchJobStageConfigEarliest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchJobStageConfigEarliest1 returns the union data inside the SearchJobStageConfig_Earliest as a SearchJobStageConfigEarliest1
+// AsSearchJobStageConfigEarliest1 returns the Union data inside the SearchJobStageConfig_Earliest as a SearchJobStageConfigEarliest1
 func (t SearchJobStageConfig_Earliest) AsSearchJobStageConfigEarliest1() (SearchJobStageConfigEarliest1, error) {
 	var body SearchJobStageConfigEarliest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobStageConfigEarliest1 overwrites any union data inside the SearchJobStageConfig_Earliest as the provided SearchJobStageConfigEarliest1
+// FromSearchJobStageConfigEarliest1 overwrites any Union data inside the SearchJobStageConfig_Earliest as the provided SearchJobStageConfigEarliest1
 func (t *SearchJobStageConfig_Earliest) FromSearchJobStageConfigEarliest1(v SearchJobStageConfigEarliest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobStageConfigEarliest1 performs a merge with any union data inside the SearchJobStageConfig_Earliest, using the provided SearchJobStageConfigEarliest1
+// MergeSearchJobStageConfigEarliest1 performs a merge with any Union data inside the SearchJobStageConfig_Earliest, using the provided SearchJobStageConfigEarliest1
 func (t *SearchJobStageConfig_Earliest) MergeSearchJobStageConfigEarliest1(v SearchJobStageConfigEarliest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchJobStageConfig_Earliest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchJobStageConfig_Earliest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchJobStageConfigLatest0 returns the union data inside the SearchJobStageConfig_Latest as a SearchJobStageConfigLatest0
+// AsSearchJobStageConfigLatest0 returns the Union data inside the SearchJobStageConfig_Latest as a SearchJobStageConfigLatest0
 func (t SearchJobStageConfig_Latest) AsSearchJobStageConfigLatest0() (SearchJobStageConfigLatest0, error) {
 	var body SearchJobStageConfigLatest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobStageConfigLatest0 overwrites any union data inside the SearchJobStageConfig_Latest as the provided SearchJobStageConfigLatest0
+// FromSearchJobStageConfigLatest0 overwrites any Union data inside the SearchJobStageConfig_Latest as the provided SearchJobStageConfigLatest0
 func (t *SearchJobStageConfig_Latest) FromSearchJobStageConfigLatest0(v SearchJobStageConfigLatest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobStageConfigLatest0 performs a merge with any union data inside the SearchJobStageConfig_Latest, using the provided SearchJobStageConfigLatest0
+// MergeSearchJobStageConfigLatest0 performs a merge with any Union data inside the SearchJobStageConfig_Latest, using the provided SearchJobStageConfigLatest0
 func (t *SearchJobStageConfig_Latest) MergeSearchJobStageConfigLatest0(v SearchJobStageConfigLatest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchJobStageConfigLatest1 returns the union data inside the SearchJobStageConfig_Latest as a SearchJobStageConfigLatest1
+// AsSearchJobStageConfigLatest1 returns the Union data inside the SearchJobStageConfig_Latest as a SearchJobStageConfigLatest1
 func (t SearchJobStageConfig_Latest) AsSearchJobStageConfigLatest1() (SearchJobStageConfigLatest1, error) {
 	var body SearchJobStageConfigLatest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchJobStageConfigLatest1 overwrites any union data inside the SearchJobStageConfig_Latest as the provided SearchJobStageConfigLatest1
+// FromSearchJobStageConfigLatest1 overwrites any Union data inside the SearchJobStageConfig_Latest as the provided SearchJobStageConfigLatest1
 func (t *SearchJobStageConfig_Latest) FromSearchJobStageConfigLatest1(v SearchJobStageConfigLatest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchJobStageConfigLatest1 performs a merge with any union data inside the SearchJobStageConfig_Latest, using the provided SearchJobStageConfigLatest1
+// MergeSearchJobStageConfigLatest1 performs a merge with any Union data inside the SearchJobStageConfig_Latest, using the provided SearchJobStageConfigLatest1
 func (t *SearchJobStageConfig_Latest) MergeSearchJobStageConfigLatest1(v SearchJobStageConfigLatest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchJobStageConfig_Latest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchJobStageConfig_Latest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchParameterValue0 returns the union data inside the SearchParameterValue as a SearchParameterValue0
+// AsSearchParameterValue0 returns the Union data inside the SearchParameterValue as a SearchParameterValue0
 func (t SearchParameterValue) AsSearchParameterValue0() (SearchParameterValue0, error) {
 	var body SearchParameterValue0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchParameterValue0 overwrites any union data inside the SearchParameterValue as the provided SearchParameterValue0
+// FromSearchParameterValue0 overwrites any Union data inside the SearchParameterValue as the provided SearchParameterValue0
 func (t *SearchParameterValue) FromSearchParameterValue0(v SearchParameterValue0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchParameterValue0 performs a merge with any union data inside the SearchParameterValue, using the provided SearchParameterValue0
+// MergeSearchParameterValue0 performs a merge with any Union data inside the SearchParameterValue, using the provided SearchParameterValue0
 func (t *SearchParameterValue) MergeSearchParameterValue0(v SearchParameterValue0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchParameterValue1 returns the union data inside the SearchParameterValue as a SearchParameterValue1
+// AsSearchParameterValue1 returns the Union data inside the SearchParameterValue as a SearchParameterValue1
 func (t SearchParameterValue) AsSearchParameterValue1() (SearchParameterValue1, error) {
 	var body SearchParameterValue1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchParameterValue1 overwrites any union data inside the SearchParameterValue as the provided SearchParameterValue1
+// FromSearchParameterValue1 overwrites any Union data inside the SearchParameterValue as the provided SearchParameterValue1
 func (t *SearchParameterValue) FromSearchParameterValue1(v SearchParameterValue1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchParameterValue1 performs a merge with any union data inside the SearchParameterValue, using the provided SearchParameterValue1
+// MergeSearchParameterValue1 performs a merge with any Union data inside the SearchParameterValue, using the provided SearchParameterValue1
 func (t *SearchParameterValue) MergeSearchParameterValue1(v SearchParameterValue1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchParameterValue2 returns the union data inside the SearchParameterValue as a SearchParameterValue2
+// AsSearchParameterValue2 returns the Union data inside the SearchParameterValue as a SearchParameterValue2
 func (t SearchParameterValue) AsSearchParameterValue2() (SearchParameterValue2, error) {
 	var body SearchParameterValue2
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchParameterValue2 overwrites any union data inside the SearchParameterValue as the provided SearchParameterValue2
+// FromSearchParameterValue2 overwrites any Union data inside the SearchParameterValue as the provided SearchParameterValue2
 func (t *SearchParameterValue) FromSearchParameterValue2(v SearchParameterValue2) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchParameterValue2 performs a merge with any union data inside the SearchParameterValue, using the provided SearchParameterValue2
+// MergeSearchParameterValue2 performs a merge with any Union data inside the SearchParameterValue, using the provided SearchParameterValue2
 func (t *SearchParameterValue) MergeSearchParameterValue2(v SearchParameterValue2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchParameterValue) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchParameterValue) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchQuery0 returns the union data inside the SearchQuery as a SearchQuery0
+// AsSearchQuery0 returns the Union data inside the SearchQuery as a SearchQuery0
 func (t SearchQuery) AsSearchQuery0() (SearchQuery0, error) {
 	var body SearchQuery0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery0 overwrites any union data inside the SearchQuery as the provided SearchQuery0
+// FromSearchQuery0 overwrites any Union data inside the SearchQuery as the provided SearchQuery0
 func (t *SearchQuery) FromSearchQuery0(v SearchQuery0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery0 performs a merge with any union data inside the SearchQuery, using the provided SearchQuery0
+// MergeSearchQuery0 performs a merge with any Union data inside the SearchQuery, using the provided SearchQuery0
 func (t *SearchQuery) MergeSearchQuery0(v SearchQuery0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchQuery1 returns the union data inside the SearchQuery as a SearchQuery1
+// AsSearchQuery1 returns the Union data inside the SearchQuery as a SearchQuery1
 func (t SearchQuery) AsSearchQuery1() (SearchQuery1, error) {
 	var body SearchQuery1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1 overwrites any union data inside the SearchQuery as the provided SearchQuery1
+// FromSearchQuery1 overwrites any Union data inside the SearchQuery as the provided SearchQuery1
 func (t *SearchQuery) FromSearchQuery1(v SearchQuery1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1 performs a merge with any union data inside the SearchQuery, using the provided SearchQuery1
+// MergeSearchQuery1 performs a merge with any Union data inside the SearchQuery, using the provided SearchQuery1
 func (t *SearchQuery) MergeSearchQuery1(v SearchQuery1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchQuery2 returns the union data inside the SearchQuery as a SearchQuery2
+// AsSearchQuery2 returns the Union data inside the SearchQuery as a SearchQuery2
 func (t SearchQuery) AsSearchQuery2() (SearchQuery2, error) {
 	var body SearchQuery2
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery2 overwrites any union data inside the SearchQuery as the provided SearchQuery2
+// FromSearchQuery2 overwrites any Union data inside the SearchQuery as the provided SearchQuery2
 func (t *SearchQuery) FromSearchQuery2(v SearchQuery2) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery2 performs a merge with any union data inside the SearchQuery, using the provided SearchQuery2
+// MergeSearchQuery2 performs a merge with any Union data inside the SearchQuery, using the provided SearchQuery2
 func (t *SearchQuery) MergeSearchQuery2(v SearchQuery2) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchQuery) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchQuery) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchQuery1Earliest0 returns the union data inside the SearchQuery_1_Earliest as a SearchQuery1Earliest0
+// AsSearchQuery1Earliest0 returns the Union data inside the SearchQuery_1_Earliest as a SearchQuery1Earliest0
 func (t SearchQuery_1_Earliest) AsSearchQuery1Earliest0() (SearchQuery1Earliest0, error) {
 	var body SearchQuery1Earliest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1Earliest0 overwrites any union data inside the SearchQuery_1_Earliest as the provided SearchQuery1Earliest0
+// FromSearchQuery1Earliest0 overwrites any Union data inside the SearchQuery_1_Earliest as the provided SearchQuery1Earliest0
 func (t *SearchQuery_1_Earliest) FromSearchQuery1Earliest0(v SearchQuery1Earliest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1Earliest0 performs a merge with any union data inside the SearchQuery_1_Earliest, using the provided SearchQuery1Earliest0
+// MergeSearchQuery1Earliest0 performs a merge with any Union data inside the SearchQuery_1_Earliest, using the provided SearchQuery1Earliest0
 func (t *SearchQuery_1_Earliest) MergeSearchQuery1Earliest0(v SearchQuery1Earliest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchQuery1Earliest1 returns the union data inside the SearchQuery_1_Earliest as a SearchQuery1Earliest1
+// AsSearchQuery1Earliest1 returns the Union data inside the SearchQuery_1_Earliest as a SearchQuery1Earliest1
 func (t SearchQuery_1_Earliest) AsSearchQuery1Earliest1() (SearchQuery1Earliest1, error) {
 	var body SearchQuery1Earliest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1Earliest1 overwrites any union data inside the SearchQuery_1_Earliest as the provided SearchQuery1Earliest1
+// FromSearchQuery1Earliest1 overwrites any Union data inside the SearchQuery_1_Earliest as the provided SearchQuery1Earliest1
 func (t *SearchQuery_1_Earliest) FromSearchQuery1Earliest1(v SearchQuery1Earliest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1Earliest1 performs a merge with any union data inside the SearchQuery_1_Earliest, using the provided SearchQuery1Earliest1
+// MergeSearchQuery1Earliest1 performs a merge with any Union data inside the SearchQuery_1_Earliest, using the provided SearchQuery1Earliest1
 func (t *SearchQuery_1_Earliest) MergeSearchQuery1Earliest1(v SearchQuery1Earliest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchQuery_1_Earliest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchQuery_1_Earliest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchQuery1Latest0 returns the union data inside the SearchQuery_1_Latest as a SearchQuery1Latest0
+// AsSearchQuery1Latest0 returns the Union data inside the SearchQuery_1_Latest as a SearchQuery1Latest0
 func (t SearchQuery_1_Latest) AsSearchQuery1Latest0() (SearchQuery1Latest0, error) {
 	var body SearchQuery1Latest0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1Latest0 overwrites any union data inside the SearchQuery_1_Latest as the provided SearchQuery1Latest0
+// FromSearchQuery1Latest0 overwrites any Union data inside the SearchQuery_1_Latest as the provided SearchQuery1Latest0
 func (t *SearchQuery_1_Latest) FromSearchQuery1Latest0(v SearchQuery1Latest0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1Latest0 performs a merge with any union data inside the SearchQuery_1_Latest, using the provided SearchQuery1Latest0
+// MergeSearchQuery1Latest0 performs a merge with any Union data inside the SearchQuery_1_Latest, using the provided SearchQuery1Latest0
 func (t *SearchQuery_1_Latest) MergeSearchQuery1Latest0(v SearchQuery1Latest0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchQuery1Latest1 returns the union data inside the SearchQuery_1_Latest as a SearchQuery1Latest1
+// AsSearchQuery1Latest1 returns the Union data inside the SearchQuery_1_Latest as a SearchQuery1Latest1
 func (t SearchQuery_1_Latest) AsSearchQuery1Latest1() (SearchQuery1Latest1, error) {
 	var body SearchQuery1Latest1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1Latest1 overwrites any union data inside the SearchQuery_1_Latest as the provided SearchQuery1Latest1
+// FromSearchQuery1Latest1 overwrites any Union data inside the SearchQuery_1_Latest as the provided SearchQuery1Latest1
 func (t *SearchQuery_1_Latest) FromSearchQuery1Latest1(v SearchQuery1Latest1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1Latest1 performs a merge with any union data inside the SearchQuery_1_Latest, using the provided SearchQuery1Latest1
+// MergeSearchQuery1Latest1 performs a merge with any Union data inside the SearchQuery_1_Latest, using the provided SearchQuery1Latest1
 func (t *SearchQuery_1_Latest) MergeSearchQuery1Latest1(v SearchQuery1Latest1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchQuery_1_Latest) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchQuery_1_Latest) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchQuery1Query0 returns the union data inside the SearchQuery_1_Query as a SearchQuery1Query0
+// AsSearchQuery1Query0 returns the Union data inside the SearchQuery_1_Query as a SearchQuery1Query0
 func (t SearchQuery_1_Query) AsSearchQuery1Query0() (SearchQuery1Query0, error) {
 	var body SearchQuery1Query0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchQuery1Query0 overwrites any union data inside the SearchQuery_1_Query as the provided SearchQuery1Query0
+// FromSearchQuery1Query0 overwrites any Union data inside the SearchQuery_1_Query as the provided SearchQuery1Query0
 func (t *SearchQuery_1_Query) FromSearchQuery1Query0(v SearchQuery1Query0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchQuery1Query0 performs a merge with any union data inside the SearchQuery_1_Query, using the provided SearchQuery1Query0
+// MergeSearchQuery1Query0 performs a merge with any Union data inside the SearchQuery_1_Query, using the provided SearchQuery1Query0
 func (t *SearchQuery_1_Query) MergeSearchQuery1Query0(v SearchQuery1Query0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchQuery_1_Query) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchQuery_1_Query) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchSettingsSearchQueueLength0 returns the union data inside the SearchSettings_SearchQueueLength as a SearchSettingsSearchQueueLength0
+// AsSearchSettingsSearchQueueLength0 returns the Union data inside the SearchSettings_SearchQueueLength as a SearchSettingsSearchQueueLength0
 func (t SearchSettings_SearchQueueLength) AsSearchSettingsSearchQueueLength0() (SearchSettingsSearchQueueLength0, error) {
 	var body SearchSettingsSearchQueueLength0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchSettingsSearchQueueLength0 overwrites any union data inside the SearchSettings_SearchQueueLength as the provided SearchSettingsSearchQueueLength0
+// FromSearchSettingsSearchQueueLength0 overwrites any Union data inside the SearchSettings_SearchQueueLength as the provided SearchSettingsSearchQueueLength0
 func (t *SearchSettings_SearchQueueLength) FromSearchSettingsSearchQueueLength0(v SearchSettingsSearchQueueLength0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchSettingsSearchQueueLength0 performs a merge with any union data inside the SearchSettings_SearchQueueLength, using the provided SearchSettingsSearchQueueLength0
+// MergeSearchSettingsSearchQueueLength0 performs a merge with any Union data inside the SearchSettings_SearchQueueLength, using the provided SearchSettingsSearchQueueLength0
 func (t *SearchSettings_SearchQueueLength) MergeSearchSettingsSearchQueueLength0(v SearchSettingsSearchQueueLength0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchSettings_SearchQueueLength) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchSettings_SearchQueueLength) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 
-// AsSearchSettingsWarmPoolSize0 returns the union data inside the SearchSettings_WarmPoolSize as a SearchSettingsWarmPoolSize0
+// AsSearchSettingsWarmPoolSize0 returns the Union data inside the SearchSettings_WarmPoolSize as a SearchSettingsWarmPoolSize0
 func (t SearchSettings_WarmPoolSize) AsSearchSettingsWarmPoolSize0() (SearchSettingsWarmPoolSize0, error) {
 	var body SearchSettingsWarmPoolSize0
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchSettingsWarmPoolSize0 overwrites any union data inside the SearchSettings_WarmPoolSize as the provided SearchSettingsWarmPoolSize0
+// FromSearchSettingsWarmPoolSize0 overwrites any Union data inside the SearchSettings_WarmPoolSize as the provided SearchSettingsWarmPoolSize0
 func (t *SearchSettings_WarmPoolSize) FromSearchSettingsWarmPoolSize0(v SearchSettingsWarmPoolSize0) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchSettingsWarmPoolSize0 performs a merge with any union data inside the SearchSettings_WarmPoolSize, using the provided SearchSettingsWarmPoolSize0
+// MergeSearchSettingsWarmPoolSize0 performs a merge with any Union data inside the SearchSettings_WarmPoolSize, using the provided SearchSettingsWarmPoolSize0
 func (t *SearchSettings_WarmPoolSize) MergeSearchSettingsWarmPoolSize0(v SearchSettingsWarmPoolSize0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
-// AsSearchSettingsWarmPoolSize1 returns the union data inside the SearchSettings_WarmPoolSize as a SearchSettingsWarmPoolSize1
+// AsSearchSettingsWarmPoolSize1 returns the Union data inside the SearchSettings_WarmPoolSize as a SearchSettingsWarmPoolSize1
 func (t SearchSettings_WarmPoolSize) AsSearchSettingsWarmPoolSize1() (SearchSettingsWarmPoolSize1, error) {
 	var body SearchSettingsWarmPoolSize1
-	err := json.Unmarshal(t.union, &body)
+	err := json.Unmarshal(t.Union, &body)
 	return body, err
 }
 
-// FromSearchSettingsWarmPoolSize1 overwrites any union data inside the SearchSettings_WarmPoolSize as the provided SearchSettingsWarmPoolSize1
+// FromSearchSettingsWarmPoolSize1 overwrites any Union data inside the SearchSettings_WarmPoolSize as the provided SearchSettingsWarmPoolSize1
 func (t *SearchSettings_WarmPoolSize) FromSearchSettingsWarmPoolSize1(v SearchSettingsWarmPoolSize1) error {
 	b, err := json.Marshal(v)
-	t.union = b
+	t.Union = b
 	return err
 }
 
-// MergeSearchSettingsWarmPoolSize1 performs a merge with any union data inside the SearchSettings_WarmPoolSize, using the provided SearchSettingsWarmPoolSize1
+// MergeSearchSettingsWarmPoolSize1 performs a merge with any Union data inside the SearchSettings_WarmPoolSize, using the provided SearchSettingsWarmPoolSize1
 func (t *SearchSettings_WarmPoolSize) MergeSearchSettingsWarmPoolSize1(v SearchSettingsWarmPoolSize1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
 	}
 
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
+	merged, err := runtime.JSONMerge(t.Union, b)
+	t.Union = merged
 	return err
 }
 
 func (t SearchSettings_WarmPoolSize) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
+	b, err := t.Union.MarshalJSON()
 	return b, err
 }
 
 func (t *SearchSettings_WarmPoolSize) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
+	err := t.Union.UnmarshalJSON(b)
 	return err
 }
 

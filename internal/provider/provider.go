@@ -135,5 +135,6 @@ func (p *criblProvider) DataSources(_ context.Context) []func() datasource.DataS
 func (p *criblProvider) Resources(_ context.Context) []func() resource.Resource {
 	return []func() resource.Resource{
 		NewCriblPipelineResource,
+		NewCriblOutputS3Resource,
 	}
 }

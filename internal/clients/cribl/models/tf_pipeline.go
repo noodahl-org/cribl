@@ -9,7 +9,3 @@ type Pipeline struct {
 	Tags        types.List   `tfsdk:"tags"`
 	Output      types.String `tfsdk:"output"`
 }
-
-type criblResourceModel struct {
-	Pipelines []Pipeline `tfsdk:"pipelines"`
-}

@@ -29,3 +29,9 @@ client --> pipelines: fetch
 client --> outputs: fetch
 
 ```
+
+Add input
+```mermaid
+sequenceDiagram
+
+```
