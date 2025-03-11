@@ -8,7 +8,7 @@ terraform {
 
 provider "cribl" {
   username = "admin"
-  password = "FuckOff1w"
+  password = "changeme"
   base_url = "http://localhost:9000"
 }
 
