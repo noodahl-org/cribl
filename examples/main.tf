@@ -34,11 +34,9 @@ resource "cribl_output_s3" "example" {
   # Authentication - choose one method
   # Option 1: Using AWS roles (recommended for production)
   # No additional fields needed if using IAM roles
-
-  # Option 2: Using AWS secret (from Cribl secrets store)
+  # OR
   # aws_secret = "my-aws-credentials"
-
-  # Option 3: Using explicit credentials (not recommended for production)
+  # OR
   # aws_api_key = "YOUR_ACCESS_KEY_ID"
   # aws_secret_key = "YOUR_SECRET_ACCESS_KEY"
 
@@ -62,10 +60,3 @@ resource "cribl_output_s3" "example" {
   ]
 }
 
-#resource "cribl_route" "route1" {
-#  name        = "First Route"
-#  pipeline_id = cribl_api.example.pipelines[0].id
-
-# This implicit dependency ensures the pipeline is created before the route
-#  depends_on = [cribl_api.example]
-#}
