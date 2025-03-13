@@ -1,10 +1,9 @@
-package provider
+package outputs
 
 import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"net/http"
 
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
@@ -189,12 +188,12 @@ func (r *criblOutputS3Resource) Schema(ctx context.Context, req resource.SchemaR
 				Optional:    true,
 			},
 			"aws_api_key": schema.StringAttribute{
-				Description: "Access key. This value can be a constant or a JavaScript expression",
+				Description: "AWS Access key.",
 				Optional:    true,
 				Sensitive:   true,
 			},
 			"aws_secret_key": schema.StringAttribute{
-				Description: "Secret key. This value can be a constant or a JavaScript expression",
+				Description: "AWS Secret key.",
 				Optional:    true,
 				Sensitive:   true,
 			},
@@ -334,11 +333,11 @@ func (r *criblOutputS3Resource) Create(ctx context.Context, req resource.CreateR
 		)
 		return
 	}
-	outputRes, err := r.client.PostSystemOutputs(ctx, cribl.Output{
+	_, err = r.client.PostSystemOutputs(ctx, cribl.Output{
 		Union: json.RawMessage(outputBytes),
 	})
 
-	if err != nil || outputRes.StatusCode != http.StatusResetContent {
+	if err != nil {
 		resp.Diagnostics.AddError(
 			"Unable to create output in Cribl",
 			err.Error(),
@@ -348,12 +347,33 @@ func (r *criblOutputS3Resource) Create(ctx context.Context, req resource.CreateR
 	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
 
-// todo finish
 func (r *criblOutputS3Resource) Update(ctx context.Context, req resource.UpdateRequest, resp *resource.UpdateResponse) {
 	var data models.OutputS3
-
-	// Read Terraform plan data into the model
 	resp.Diagnostics.Append(req.Plan.Get(ctx, &data)...)
+	if resp.Diagnostics.HasError() {
+		return
+	}
+
+	outputBytes, err := json.Marshal(data.ToCriblOutputS3())
+	if err != nil {
+		resp.Diagnostics.AddError(
+			"Unable to marshal request to Cribl",
+			err.Error(),
+		)
+		return
+	}
+
+	if _, err = r.client.PatchSystemOutputsId(ctx, data.ID.ValueString(), cribl.Output{
+		Union: json.RawMessage(outputBytes),
+	}); err != nil {
+		resp.Diagnostics.AddError(
+			"Unable to update output in Cribl",
+			err.Error(),
+		)
+		return
+	}
+
+	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
 
 func (r *criblOutputS3Resource) Delete(ctx context.Context, req resource.DeleteRequest, resp *resource.DeleteResponse) {
@@ -380,8 +400,10 @@ func (r *criblOutputS3Resource) Read(ctx context.Context, req resource.ReadReque
 		return
 	}
 
-	tmp := cribl.OutputS3{}
-	outputRes, err := r.client.GetSystemOutputsId(ctx, data.ID.String())
+	tmp := struct {
+		Items []cribl.OutputS3 `json:"items"`
+	}{}
+	outputRes, err := r.client.GetSystemOutputsId(ctx, data.ID.ValueString())
 	if err != nil {
 		resp.Diagnostics.AddError(
 			"Unable to fetch output from Cribl",
@@ -395,7 +417,7 @@ func (r *criblOutputS3Resource) Read(ctx context.Context, req resource.ReadReque
 		)
 		return
 	}
-	data.FromCriblOutputS3(tmp)
+	data.FromCriblOutputS3(tmp.Items[0])
 	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
 

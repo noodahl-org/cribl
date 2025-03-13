@@ -11321,16 +11321,17 @@ type InputDatadogAgentTlsMinVersion string
 // InputDatadogAgentType defines model for InputDatadogAgent.Type.
 type InputDatadogAgentType string
 
+type InputConnection struct {
+		// Output Select a Destination.
+		Output string `json:"output"`
+		// Pipeline Select Pipeline or Pack. Optional.
+		Pipeline *string `json:"pipeline,omitempty"`
+}
+
 // InputDatagen defines model for InputDatagen.
 type InputDatagen struct {
 	// Connections Direct connections to Destinations, optionally via a Pipeline or a Pack.
-	Connections *[]struct {
-		// Output Select a Destination.
-		Output string `json:"output"`
-
-		// Pipeline Select Pipeline or Pack. Optional.
-		Pipeline *string `json:"pipeline,omitempty"`
-	} `json:"connections,omitempty"`
+	Connections *[]InputConnection `json:"connections,omitempty"`
 	Description *string `json:"description,omitempty"`
 	Disabled    *bool   `json:"disabled,omitempty"`
 

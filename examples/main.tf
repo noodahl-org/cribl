@@ -16,8 +16,29 @@ resource "cribl_pipeline" "example" {
   id          = "test01"
   description = "Foo pipeline"
   timeout_ms  = 3000
-  tags        = ["foo"]
+  #tags        = ["foo"]
   output      = "default"
+}
+
+resource "cribl_input_datagen" "example" {
+  id          = "input_example"
+  type        = "datagen"
+  disabled    = false
+  description = "datagen input"
+  pipeline    = cribl_pipeline.example.id
+  
+  samples = [
+    {
+      events_per_sec = 1
+      sample         = "apache_common.log"
+    }
+  ]
+  
+  #streamtags     = ["datagen", "test"]
+  send_to_routes = true
+  pq_enabled     = false
+  #metadata       = ["source:datagen", "environment:test"]
+  environment    = "default"
 }
 
 resource "cribl_output_s3" "example" {
@@ -25,7 +46,7 @@ resource "cribl_output_s3" "example" {
   type                      = "s3"
   default_id                = "output_example"
   description               = "S3 output that depends on test01 pipeline"
-  bucket                    = "my-cribl-output-bucket"
+  bucket                    = "cribl-output-bucket"
   region                    = "us-west-2"
   stage_path                = "/tmp/cribl/s3-staging"
   dest_path                 = "cribl-outputs/${formatdate("YYYY/MM/DD", timestamp())}"

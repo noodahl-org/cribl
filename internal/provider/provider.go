@@ -13,6 +13,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 
 	"github.com/noodahl-org/cribl/internal/clients/cribl"
+	"github.com/noodahl-org/cribl/internal/provider/inputs"
+	"github.com/noodahl-org/cribl/internal/provider/outputs"
 )
 
 var (
@@ -135,6 +137,7 @@ func (p *criblProvider) DataSources(_ context.Context) []func() datasource.DataS
 func (p *criblProvider) Resources(_ context.Context) []func() resource.Resource {
 	return []func() resource.Resource{
 		NewCriblPipelineResource,
-		NewCriblOutputS3Resource,
+		inputs.NewCriblInputDatagenResource,
+		outputs.NewCriblOutputS3Resource,
 	}
 }

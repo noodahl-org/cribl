@@ -3,6 +3,7 @@ package provider
 import (
 	"context"
 	"fmt"
+	"net/http"
 
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
@@ -92,6 +93,30 @@ func (c *criblPipelineResource) Update(ctx context.Context, req resource.UpdateR
 		return
 	}
 
+	var tags []string
+	resp.Diagnostics.Append(plan.Tags.ElementsAs(ctx, &tags, false)...)
+	if resp.Diagnostics.HasError() {
+		return
+	}
+
+	r, err := c.client.PatchPipelinesId(ctx, plan.ID.ValueString(), cribl.Pipeline{
+		Id: plan.ID.ValueString(),
+		Conf: cribl.PipelineConf{
+			AsyncFuncTimeout: lo.ToPtr(int(plan.TimeoutMS.ValueInt64())),
+			Description:      plan.Description.ValueStringPointer(),
+			//todo: fix streamtags - threw a 500 while calling into the api
+			//Streamtags:       lo.ToPtr(tags),
+			Output: plan.Output.ValueStringPointer(),
+		},
+	})
+	if err != nil || r.StatusCode == http.StatusInternalServerError {
+		resp.Diagnostics.AddError(
+			fmt.Sprintf("Error updating pipeline. Status %v", r.StatusCode),
+			err.Error(),
+		)
+		return
+	}
+
 	resp.Diagnostics.Append(resp.State.Set(ctx, &plan)...)
 }
 
@@ -108,9 +133,8 @@ func (c *criblPipelineResource) Delete(ctx context.Context, req resource.DeleteR
 			"Unabled to delete Cribl pipline",
 			err.Error(),
 		)
-		return
 	}
-	
+
 }
 
 func (c *criblPipelineResource) Read(ctx context.Context, req resource.ReadRequest, resp *resource.ReadResponse) {
@@ -119,8 +143,8 @@ func (c *criblPipelineResource) Read(ctx context.Context, req resource.ReadReque
 	if resp.Diagnostics.HasError() {
 		return
 	}
-	//fetch pipelines
-	pipelineResp, err := c.client.GetPipelines(ctx, c.client.RequestEditors...)
+
+	pipelineRes, err := c.client.GetPipelinesId(ctx, state.ID.ValueString(), c.client.RequestEditors...)
 	if err != nil {
 		resp.Diagnostics.AddError(
 			"Unable to fetch pipelines from Cribl",
@@ -128,25 +152,23 @@ func (c *criblPipelineResource) Read(ctx context.Context, req resource.ReadReque
 		)
 		return
 	}
-
-	pipelines := struct {
-		Items []cribl.Pipeline `json:"items"`
-	}{}
-	if err := cribl.HandleResult(pipelineResp, err, &pipelines); err != nil {
-		resp.Diagnostics.AddError(
-			"Unable to fetch pipelines from Cribl",
-			err.Error(),
-		)
+	if pipelineRes.StatusCode == http.StatusNotFound {
 		return
 	}
-	for _, pipeline := range pipelines.Items {
-		if pipeline.Id != state.ID.ValueString() {
-			continue
+	pipeline := cribl.Pipeline{}
+	if err := cribl.HandleResult(pipelineRes, err, &pipeline); err != nil {
+		if err != nil {
+			resp.Diagnostics.AddError(
+				"Unable to unmarshal pipelines from Cribl",
+				err.Error(),
+			)
+			return
 		}
-		state.Description = types.StringValue(lo.FromPtr(pipeline.Conf.Description))
-		if pipeline.Conf.AsyncFuncTimeout != nil {
-			state.TimeoutMS = types.Int64Value(int64(*pipeline.Conf.AsyncFuncTimeout))
-		}
+	}
+	state.Description = types.StringValue(lo.FromPtr(pipeline.Conf.Description))
+	state.Output = types.StringValue(lo.FromPtr(pipeline.Conf.Output))
+	if pipeline.Conf.AsyncFuncTimeout != nil {
+		state.TimeoutMS = types.Int64Value(int64(*pipeline.Conf.AsyncFuncTimeout))
 	}
 
 	resp.Diagnostics.Append(resp.State.Set(ctx, &state)...)
